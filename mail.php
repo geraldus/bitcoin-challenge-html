@@ -29,10 +29,10 @@ $export_fields = ''; // список полей для экспорта (чер�
 $fields = "";
 foreach($_POST as $key => $value){
   if($value === 'on'){ $value = 'Да'; }
-  if($key === 'sendto'){ 
+  if($key === 'sendto'){
     $email = $value;
   } elseif($key === 'required_fields'){
-    $required = explode(',', $value); 
+    $required = explode(',', $value);
   } else {
     if(in_array($key, $required) && $value === ''){ echo 'ERROR_REQUIRED'; die(); }
     if(is_array($value)){
@@ -85,7 +85,7 @@ try {
   $mail->Subject = htmlspecialchars($subject);
   $mail->MsgHTML($content);
 
-  if(!empty($client_file) && $client_mode){
+  if($client_mode){
     $mail->AddAttachment($client_file);
   }elseif(!$client_mode){
     if($_FILES['file']['name'][0] !== '') {
