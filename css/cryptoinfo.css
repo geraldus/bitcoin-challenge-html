@@ -1,0 +1,126 @@
+.pos-rel {
+  position: relative;
+}
+
+.pos-fix {
+  position: fixed;
+}
+
+
+/* Planetary Info Graphics */
+
+#planets {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+
+.CryptoInfo {
+  position: relative;
+}
+
+.CryptoInfo .wrap {
+  position: absolute;
+}
+
+.CryptoInfo .planet {
+  z-index: 15000;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.CryptoInfo #planet-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/cryptoinfo/Planet_center.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.CryptoInfo .hint {
+  height: 86px;
+  width: 200px;
+  background-image: url(../images/cryptoinfo/hint.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10000;
+}
+
+.CryptoInfo .hint-value-wrap {
+  position: relative;
+}
+
+.CryptoInfo .hint-value {
+  position: absolute;
+  width: 125px;
+  height: 20px;
+  left: 60px;
+  top: 4px;
+  z-index: 20000;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  font-family: Consolas, Menlo, monospace;
+}
+
+.CryptoInfo #p1 {
+  background-image: url(../images/cryptoinfo/Planet_1.png);
+}
+
+.CryptoInfo #p2 {
+  background-image: url(../images/cryptoinfo/Planet_2.png);
+}
+
+.CryptoInfo #p3 {
+  background-image: url(../images/cryptoinfo/Planet_3.png);
+}
+
+.CryptoInfo #p4 {
+  background-image: url(../images/cryptoinfo/Planet_4.png);
+}
+
+.CryptoInfo #p5 {
+  background-image: url(../images/cryptoinfo/Planet_5.png);
+}
+
+
+/* Counters */
+
+.animated-counter {
+  position: absolute;
+  font-family: perfoovalnormal;
+  text-align: right;
+}
+
+#members-counter {
+  font-size: 1.7rem;
+  top: 94px;
+  left: 148px;
+  color: white;
+  width: 103px;
+  transform: rotate(-8.8deg);
+  text-shadow: 1px 1px 3px red, -1px 1px 3px red, 1px -1px 3px red, -1px -1px 3px red;
+}
+
+#trades-counter-host {
+  perspective: 500px;
+}
+
+#trades-counter {
+  font-size: 3.7rem;
+  top: 264px;
+  left: 20px;
+  width: 260px;
+  transform: rotateX(-6deg) rotateY(-21deg);
+  text-shadow: 1px 1px 5px #69dbf2, -1px 1px 5px #69dbf2, 1px -1px 5px #69dbf2, -1px -1px 5px #69dbf2;
+}
+

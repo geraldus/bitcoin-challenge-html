@@ -1,0 +1,50 @@
+/* First screen fix customization */
+.div-block-62 {
+  height: 0px;
+}
+.homescreen-fix .div-block-62 {
+  position: fixed;
+  height: 1000px;
+}
+
+.section-2 {
+  margin-top: 1480px;
+}
+
+
+/* Liquid Buttons */
+.liquid-button {
+  display: block;
+  position: static;
+  width: 230px;
+  height: 120px;
+  margin: auto;
+}
+
+#lqbtn-1 {
+  margin-top: 35px;
+}
+#lqbtn-3 {
+  margin-top: 528px;
+}
+
+/* Contacts modal optimization */
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#contacts-modal-wrap {
+  border-radius: 0.32rem;
+  border: 2px solid #cff7ff;
+  box-shadow: 0 0 11px 1px #69dbf2, 0 0 11px 1px #69dbf2 inset;
+  background-color: #69dbf27d;
+  width: 500px;
+  max-width: 80%;
+  height: 360px;
+  max-height: 70%;
+  z-index: 20000;
+}
