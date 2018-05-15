@@ -271,7 +271,9 @@ $(document).ready(function () {
       var c = this;
       var lqbtn = new LiquidButton({
           canvas: c,
-          text: 'Join'
+          text: 'Join',
+          color2: '#0014ff',
+          textColor: '#ffffff'
         });
       $(c).click(showPopup.bind(c));
     });

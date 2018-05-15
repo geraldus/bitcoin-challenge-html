@@ -15,7 +15,6 @@
 /* Liquid Buttons */
 .liquid-button {
   display: block;
-  position: static;
   width: 230px;
   height: 120px;
   margin: auto;
@@ -47,4 +46,8 @@
   height: 360px;
   max-height: 70%;
   z-index: 20000;
+}
+
+.div-block-44.star.in-cosmo {
+  position: absolute;
 }
