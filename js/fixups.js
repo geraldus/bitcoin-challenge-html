@@ -14,34 +14,7 @@ $(document).ready(function () {
       $(document.body).addClass('homescreen-fix');
     }
     scrollRem = s;
-    /* modal positioning */
-    requestAnimationFrame(function () {
-      $('.modal').each(function () {
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        var val = se.scrollTop + h * 0.5;
-        $(this).css('top', val.toString() + 'px');
-      });
-    });
-    if (__modal) {
-      $(__modal).fadeOut();
-      __modal = null;
-    }
   }
   scrollFix();
   $(document).scroll(scrollFix);
-  /* Modal activation */
-  var __modal = null;
-  var buttons = $('.profile-button-wrap');
-  buttons.each(function () {
-    $(this).click(function(e) {
-      __modal = $('#contacts-modal-wrap');
-    /**
-     * В этот момент нужно получить данные с сервера и заполнить
-     * или заменить содержимое модального окна
-     */
-      $(__modal).fadeIn();
-      e.preventDefault();
-      return false;
-    });
-  });
 });

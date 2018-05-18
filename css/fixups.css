@@ -1,4 +1,8 @@
 /* First screen fix customization */
+body {
+  background-color: #000000;
+}
+
 .div-block-62 {
   height: 0px;
 }
@@ -11,6 +15,11 @@
   margin-top: 1480px;
 }
 
+/* Descriptor */
+.div-block-17 {
+  top: 440px;
+}
+
 
 /* Liquid Buttons */
 .liquid-button {
@@ -21,33 +30,76 @@
 }
 
 #lqbtn-1 {
-  margin-top: 35px;
+  margin-top: -15px;
+}
+#lqbtn-2 {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #lqbtn-3 {
-  margin-top: 528px;
+  margin-top: 579px;
 }
 
-/* Contacts modal optimization */
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+/* Leaders section */
+
+.section-2 .div-block-19 {
+  top: 0px;
 }
 
-#contacts-modal-wrap {
-  border-radius: 0.32rem;
-  border: 2px solid #cff7ff;
-  box-shadow: 0 0 11px 1px #69dbf2, 0 0 11px 1px #69dbf2 inset;
-  background-color: #69dbf27d;
-  width: 500px;
-  max-width: 80%;
-  height: 360px;
-  max-height: 70%;
-  z-index: 20000;
+.section-2 .div-block-64 .div-block-65 {
+  top: -540px;
 }
+
+.liders_block {
+  height: 700px;
+}
+
+  .liders_sphere {
+    padding-top: 449px;
+    height: 800px;
+    background-position: 50% 361px;
+  }
+
+.section-3 .div-block-34._4 .div-block-35 {
+  top: 609px;
+}
+
+.liders_block .div-block-5 .row-6.w-row {
+  cursor: pointer;
+}
+
+/* Bottom stars */
 
 .div-block-44.star.in-cosmo {
+  top: 706px;
   position: absolute;
+}
+
+/* Modal */
+.ibox .div-block-73 {
+  /* close [x] button */
+  transform: scale(0.4);
+  top: -43px;
+  right: -43px;
+  cursor: pointer;
+}
+
+.divform {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 18px;
+  border: 2px solid #309ab5;
+  max-width: 240px;
+  top: 15%;
+}
+
+.divform > div[class^="div-block-72"] {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0px 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
 }

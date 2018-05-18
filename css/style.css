@@ -1,4 +1,4 @@
-/* Generated on: Thu May 10 2018 12:20:00 GMT+0000 (UTC) */
+/* Generated on: Tue May 15 2018 08:56:02 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -169,7 +169,7 @@
   display: block;
   height: 500px;
   max-width: 1000px;
-  margin-top: 0px;
+  margin-top: 9px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 0px;
@@ -181,7 +181,7 @@
   display: block;
   height: 500px;
   max-width: 1500px;
-  margin-top: 155px;
+  margin-top: 152px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 299px;
@@ -654,7 +654,7 @@
   max-width: 1000px;
   margin: 0px auto 26px;
   padding-top: 0px;
-  padding-bottom: 75px;
+  padding-bottom: 76px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -960,7 +960,7 @@
   position: static;
   display: block;
   max-width: 1000px;
-  margin-top: 180px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 20px;
@@ -2048,6 +2048,7 @@
   position: absolute;
   top: 50px;
   z-index: 0;
+  display: block;
   width: 100%;
   height: 400px;
   background-image: url("../images/5ac4bad76484cfe2943e946a_meteors_2.png");
