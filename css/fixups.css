@@ -11,6 +11,27 @@ body, .body {
   height: 1000px;
 }
 
+/* Descriptor */
+.div-block-17 {
+  top: 440px;
+}
+@media  (max-width: 479px) {
+  .div-block-17 {
+    top: 270px;
+  }
+}
+@media  (max-width: 767px) {
+  .div-block-17 {
+    top: 270px;
+  }
+}
+@media  (max-width: 991px) {
+  .div-block-17 {
+    top: 350px;
+  }
+}
+
+
 .section-2 {
   margin-top: 1480px;
 }
