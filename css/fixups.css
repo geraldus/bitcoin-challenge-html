@@ -1,5 +1,5 @@
 /* First screen fix customization */
-body {
+body, .body {
   background-color: #000000;
 }
 
