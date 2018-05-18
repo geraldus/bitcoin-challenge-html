@@ -8,9 +8,12 @@ $(document).ready(function () {
   function scrollFix () {
     /* main screen fix */
     var s = se.scrollTop;
-    if (s >= 3000 && scrollRem < 3000) {
+    var fixTrigger = $('.section-2 .div-block-65');
+    var triggerOffset = fixTrigger.offset().top + 350;
+    // 350px - это отступ до зримого края астероида от начала изображения
+    if (s >= triggerOffset && scrollRem < triggerOffset) {
       $(document.body).removeClass('homescreen-fix');
-    } else if (s < 3000 && scrollRem >= 3000) {
+    } else if (s < triggerOffset && scrollRem >= triggerOffset) {
       $(document.body).addClass('homescreen-fix');
     }
     scrollRem = s;
