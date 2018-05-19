@@ -36,9 +36,12 @@ body, .body {
   margin-top: 1480px;
 }
 
-/* Descriptor */
-.div-block-17 {
-  top: 440px;
+@media  (max-width: 479px) {
+  .w-slider-arrow-left,
+  .w-slider-arrow-right {
+    top: 2150px;
+  }
+}
 }
 
 
