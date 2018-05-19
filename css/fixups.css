@@ -136,6 +136,18 @@ video {
     height: 800px;
     background-position: 50% 361px;
   }
+@media (max-width: 767px) {
+  .liders_sphere {
+    background-position: 50% 161px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 479px) {
+  .liders_sphere {
+    background-position: 50% 441px;
+    padding-top: 449px;
+  }
+}
 
 .section-3 .div-block-34._4 .div-block-35 {
   top: 609px;
