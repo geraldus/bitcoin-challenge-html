@@ -19,22 +19,29 @@ video {
 .div-block-17 {
   top: 440px;
 }
-@media  (max-width: 479px) {
+@media  (max-width: 991px) {
   .div-block-17 {
-    top: 270px;
+    top: 470px;
   }
 }
 @media  (max-width: 767px) {
   .div-block-17 {
+    top: 360px;
+  }
+}
+@media  (max-width: 479px) {
+  .div-block-17 {
     top: 270px;
   }
-}
-@media  (max-width: 991px) {
-  .div-block-17 {
-    top: 350px;
+  .div-block-17 > .paragraph {
+    font-size: 10px;
   }
 }
-
+@media (max-width: 479px){
+  .div-block-65 {
+    background-position: 50% 0px, 0px 148px, 100% 98px;
+  }
+}
 
 .section-2 {
   margin-top: 1480px;
