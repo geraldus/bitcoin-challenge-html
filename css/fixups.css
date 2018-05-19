@@ -131,6 +131,21 @@ video {
 .section-3 .div-block-37 {
   margin-top: 600px;
 }
+@media (max-width: 479px) {
+  .div-block-36.planet {
+    margin-top: 30px;
+  }
+  .div-block-34 {
+    background-image: url("../images/5acdd737731dc2a4dbdb10c4_D0A1D0BBD0BED0B9201.png"), none, url("../images/5acb60703bf54b7c34422e24_D0A1D0BBD0BED0B9205-min.png");
+    background-position: 50% 65%, 100% 95px, 50% 349px;
+    background-size: 1200px, 1000px 1000px, 800px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+  }
+
+}
+
+
 /* Trades counter */
 @media screen and (max-width: 767px){
   .background-video-2 {
