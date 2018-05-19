@@ -62,6 +62,21 @@ body, .body {
 #lqbtn-3 {
   margin-top: 579px;
 }
+@media  (max-width: 991px) {
+  #lqbtn-3 {
+    margin-top: 700px;
+  }
+}
+@media  (max-width: 767px) {
+  #lqbtn-3 {
+    margin-top: 630px;
+  }
+}
+@media (max-width: 479px) {
+  #lqbtn-3 {
+    margin-top: 150px;
+  }
+}
 
 /* Leaders section */
 
