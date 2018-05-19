@@ -87,6 +87,16 @@ body, .body {
 .section-2 .div-block-64 .div-block-65 {
   top: -540px;
 }
+@media (max-width: 767px) {
+  .section-2 .div-block-64 .div-block-65 {
+    top: -100px;
+  }
+}
+@media (max-width: 479px) {
+  .section-2 .div-block-64 .div-block-65 {
+    top: -730px;
+  }
+}
 
 .liders_block {
   height: 700px;
