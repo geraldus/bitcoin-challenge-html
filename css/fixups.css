@@ -116,6 +116,15 @@ body, .body {
   cursor: pointer;
 }
 
+.slade {
+  max-width: 100%;
+}
+
+/* Plantes */
+.section-3 .div-block-37 {
+  margin-top: 600px;
+}
+
 /* Bottom stars */
 
 .div-block-44.star.in-cosmo {
