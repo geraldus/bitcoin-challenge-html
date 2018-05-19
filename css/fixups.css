@@ -65,6 +65,9 @@ video {
     top: 2150px;
   }
 }
+
+.section-3 {
+  overflow: hidden;
 }
 
 
