@@ -162,6 +162,11 @@ video {
 .section-3 .div-block-34._4 .div-block-35 {
   top: 609px;
 }
+@media (max-width: 479px) {
+  .section-3 .div-block-34._4 .div-block-35 {
+    top: 509px;
+  }
+}
 
 .liders_block .div-block-5 .row-6.w-row {
   cursor: pointer;
@@ -174,6 +179,11 @@ video {
 /* Plantes */
 .section-3 .div-block-37 {
   margin-top: 600px;
+}
+@media (min-width: 768px) {
+  .div-block-36.planet {
+    top: 225px;
+  }
 }
 @media (max-width: 479px) {
   .div-block-36.planet {
