@@ -47,6 +47,18 @@ video {
   margin-top: 1480px;
 }
 
+@media  (max-width: 767px) {
+  .w-slider-arrow-left,
+  .w-slider-arrow-right {
+    top: 2310px;
+  }
+  .w-slider-arrow-left {
+    right: 180px;
+  }
+  .w-slider-arrow-right {
+    left: 180px;
+  }
+}
 @media  (max-width: 479px) {
   .w-slider-arrow-left,
   .w-slider-arrow-right {
