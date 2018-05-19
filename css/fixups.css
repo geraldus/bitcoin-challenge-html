@@ -137,6 +137,15 @@ video {
     overflow: hidden;
   }
 }
+@media screen and (max-width: 479px){
+  .background-video-2 {
+    display: block !important;
+    top: -444px;
+  }
+  .div-block-67 {
+    max-width: 100%;
+  }
+}
 
 /* Bottom stars */
 
