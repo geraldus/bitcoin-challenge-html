@@ -141,6 +141,9 @@ video {
     background-position: 50% 161px;
     padding-top: 0;
   }
+  .div-block-51 .image-4 {
+    display: none;
+  }
 }
 @media (max-width: 479px) {
   .liders_sphere {
