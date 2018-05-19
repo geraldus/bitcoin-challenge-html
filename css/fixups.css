@@ -3,6 +3,10 @@ body, .body {
   background-color: #000000;
 }
 
+video {
+  max-width: 100%;
+}
+
 .div-block-62 {
   height: 0px;
 }
@@ -126,6 +130,12 @@ body, .body {
 /* Plantes */
 .section-3 .div-block-37 {
   margin-top: 600px;
+}
+/* Trades counter */
+@media screen and (max-width: 767px){
+  .background-video-2 {
+    overflow: hidden;
+  }
 }
 
 /* Bottom stars */
