@@ -90,7 +90,6 @@ video {
 .section-2 .div-block-19 {
   top: 0px;
 }
-
 .section-2 .div-block-64 .div-block-65 {
   top: -540px;
 }
@@ -102,6 +101,7 @@ video {
 @media (max-width: 479px) {
   .section-2 .div-block-64 .div-block-65 {
     top: -730px;
+    z-index: 25000;
   }
 }
 
