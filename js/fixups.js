@@ -1,19 +1,22 @@
 /* Фиксация главного экрана и его отключение при пролистывании */
 $(document).ready(function () {
   var se = document.scrollingElement;
+  function getTriggerOffset () {
+    var fixTrigger = $('.section-2 .div-block-65');
+    return fixTrigger.offset().top + 350;
+  }
   var scrollRem = se.scrollTop;
-  if (scrollRem >= 3000) {
+  if (scrollRem >= getTriggerOffset()) {
     $(document.body).removeClass('homescreen-fix');
   }
   function scrollFix () {
     /* main screen fix */
     var s = se.scrollTop;
-    var fixTrigger = $('.section-2 .div-block-65');
-    var triggerOffset = fixTrigger.offset().top + 350;
+    var t = getTriggerOffset();
     // 350px - это отступ до зримого края астероида от начала изображения
-    if (s >= triggerOffset && scrollRem < triggerOffset) {
+    if (s >= t && scrollRem < t) {
       $(document.body).removeClass('homescreen-fix');
-    } else if (s < triggerOffset && scrollRem >= triggerOffset) {
+    } else if (s < t && scrollRem >= t) {
       $(document.body).addClass('homescreen-fix');
     }
     scrollRem = s;
