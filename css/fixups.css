@@ -119,6 +119,9 @@ video {
   .section-2 .div-block-64 .div-block-65 {
     top: -100px;
   }
+  .section-2 .div-block-25 {
+    overflow: hidden;
+  }
 }
 @media (max-width: 479px) {
   .section-2 .div-block-64 .div-block-65 {
