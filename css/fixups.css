@@ -189,16 +189,13 @@ video {
 
 /* Plantes */
 .section-3 .div-block-37 {
-  margin-top: 450px;
-}
-@media (min-width: 768px) {
-  .div-block-36.planet {
-    top: 225px;
-  }
+  margin-top: 550px;
 }
 @media (max-width: 479px) {
   .div-block-36.planet {
     margin-top: 30px;
+    position: relative;
+    margin: 0;
   }
   .div-block-34 {
     background-image: url("../images/5acdd737731dc2a4dbdb10c4_D0A1D0BBD0BED0B9201.png"), none, url("../images/5acb60703bf54b7c34422e24_D0A1D0BBD0BED0B9205-min.png");
