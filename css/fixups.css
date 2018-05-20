@@ -164,6 +164,12 @@ video {
 }
 
 
+@media (max-width: 479px) {
+  .section-3 {
+    margin-top: -500px;
+    z-index: 14000;
+  }
+}
 .section-3 .div-block-34._4 .div-block-35 {
   top: 609px;
 }
@@ -183,7 +189,7 @@ video {
 
 /* Plantes */
 .section-3 .div-block-37 {
-  margin-top: 600px;
+  margin-top: 450px;
 }
 @media (min-width: 768px) {
   .div-block-36.planet {
@@ -221,7 +227,27 @@ video {
   }
 }
 
-/* Bottom stars */
+/* Bottom astronaut and stars */
+@media (min-width: 992px) {
+  .section-5 {
+      margin-top: 872px;
+  }
+}
+@media (max-width: 991px) {
+  .section-5 {
+      margin-top: 1112px;
+  }
+}
+@media (max-width: 767px) {
+  .section-5 {
+      margin-top: 1116px;
+  }
+}
+@media (max-width: 479px) {
+  .section-5 {
+      margin-top: 1096px;
+  }
+}
 
 .div-block-44.star.in-cosmo {
   top: 706px;
