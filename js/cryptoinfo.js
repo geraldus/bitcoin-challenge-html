@@ -6,7 +6,6 @@ function PlanetaryIG (config) {
     hostElement: null, // элемент, содержащий блоки с планетами
     planetIds: [],  // Id блоков-планет
     rotationTime: 60*1000, // полный оборот планеты за 60 секунд
-    planetMaxSize: 50, // пикселей
     updateDelay: 17 // частота обновления данных, миллисекунд
   };
   // Properties initialization
@@ -55,6 +54,7 @@ function PlanetaryIG (config) {
   }
 
   this.update = function () {
+    var planetMaxSize = parseInt(self.__getPlanetCSSSize(), 10);
     var v = 360 / self.rotationTime;
     var t = (new Date()).getTime();
     var angularOffset = 360 / self.planets.length;
@@ -67,7 +67,7 @@ function PlanetaryIG (config) {
     var hostW = $(host).width();
     var cX = hostW  / 2;
     var cY = hostH  / 2;
-    var planetRadius = self.planetMaxSize / 2;
+    var planetRadius = planetMaxSize / 2;
     var solarRadius = Math.min(hostW, hostH) / 2 - planetRadius;
     var hintH = self.planets[0].hint.host.height();
     for (var i=0; i < self.planets.length; i++) {
@@ -75,10 +75,10 @@ function PlanetaryIG (config) {
       planet.angle = ((angularOffset * i + v * tDiff)*1000 % 360000)/1000;
       var x = cX + angleRadius2X(planet.angle, solarRadius);
       var y = cY - angleRadius2Y(planet.angle, solarRadius);
-      planet.x = x - planetRadius * 2;
-      planet.y = y - planetRadius * 2;
+      planet.x = x;
+      planet.y = y;
       planet.hint.x = x;
-      planet.hint.y = y - hintH;
+      planet.hint.y = y;
       var scaleTDiff = Math.max(0, planet.targetTimestamp - t);
       var scaleTimeout = planet.targetTimestamp - planet.startTimestamp;
       var scaleValDiff = planet.targetScale - planet.startScale;
@@ -96,12 +96,13 @@ function PlanetaryIG (config) {
     for (var i = 0; i < self.planets.length; i++) {
       var planet = self.planets[i];
       var s = planet.scale;
-      var transform = '';
-      transform = 'translate(' + planet.hint.x + 'px, ' + planet.hint.y + 'px)';
-      planet.hint.host.css('transform', transform);
-      transform = 'translate(' + planet.x + 'px, ' + planet.y + 'px)';
-      transform += ' scale(' + s + ')';
-      planet.planetHost.css('transform', transform);
+      var transformHint, transformWrap;
+      transformHint = 'translate(' + planet.hint.x + 'px, ' + planet.hint.y + 'px)';
+      transformWrap = 'translate(' + planet.x + 'px, ' + planet.y + 'px)';
+      //planet.hint.host.css('transform', transformHint);
+      planet.wrap.css('transform', transformWrap);
+      var scale = 'translate(-50%, -50%) scale(' + s + ')';
+      planet.planetHost.css('transform', scale);
       var percent = (s / scaleFactor);
       var percentT = percent.toLocaleString(
         ['ru-RU', 'en-US'],
@@ -116,7 +117,13 @@ function PlanetaryIG (config) {
     requestAnimationFrame(self.render);
   }
 
-  this.init();
+  this.__getPlanetCSSSize = function () {
+    if (self.planets.length) {
+      return self.planets[0].planetHost.css('width');
+    } else {
+      return 0;
+    }
+  }
 
   function angleRadius2X(a, r) {
     var rad = Math.PI / 180 * a;
@@ -126,6 +133,8 @@ function PlanetaryIG (config) {
     var rad = Math.PI / 180 * a;
     return Math.sin(rad) * r;
   }
+
+  this.init();
 }
 
 function CryptoInfo (config) {
@@ -162,8 +171,19 @@ function CryptoInfo (config) {
 
   this.wrapElements = function () {
     var pe = $('#' + this.planetElementId);
-    var he = $('#' + this.hintElementId);
-    he.addClass('hint');
+    var he = $('<div></div>')
+      .attr('id', this.planetElementId + '-hint')
+      .addClass('hint-wrap')
+      .append(
+        $('<div></div>')
+          .addClass('hint-leg'))
+      .append(
+        $('<div></div>')
+          .addClass('hint-plane')
+        .append(
+          $('<div></div>')
+            .addClass('hint-value')))
+      .insertAfter(pe);
     var we = $('<div class="wrap"></div>')
                 .insertBefore(pe)
                 .append(pe, he);

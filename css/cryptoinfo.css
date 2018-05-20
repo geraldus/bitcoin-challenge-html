@@ -9,15 +9,20 @@
 
 /* Planetary Info Graphics */
 
-#planets {
+.CryptoInfo {
   width: 75%;
   height: 75%;
   margin: auto;
-}
-
-
-.CryptoInfo {
   position: relative;
+}
+@media (max-width: 479px) {
+  .CryptoInfo {
+    left: 50%;
+    top: 170px;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+  }
 }
 
 .CryptoInfo .wrap {
@@ -25,13 +30,29 @@
 }
 
 .CryptoInfo .planet {
-  z-index: 15000;
   position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15000;
   height: 100px;
   width: 100px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  transform: translate(-50%, -50%);
 }
+@media (max-width: 767px) {
+  .CryptoInfo .planet {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media (max-width: 479px) {
+  .CryptoInfo .planet {
+    height: 75px;
+    width: 75px;
+  }
+}
+
 
 .CryptoInfo #planet-center {
   position: absolute;
@@ -44,15 +65,47 @@
   height: 300px;
   width: 300px;
 }
+@media (max-width: 767px) {
+  .CryptoInfo #planet-center {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+@media (max-width: 479px) {
+  .CryptoInfo #planet-center {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+}
 
-.CryptoInfo .hint {
-  height: 86px;
-  width: 200px;
-  background-image: url(../images/cryptoinfo/hint.png);
+.CryptoInfo .hint-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.CryptoInfo .hint-leg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 59px;
+  transform: translateY(-100%);
+  background-image: url(../images/cryptoinfo/hint-leg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: absolute;
   z-index: 10000;
+}
+
+.CryptoInfo .hint-plane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 86px;
+  transform: translateY(-100%);
+  background-image: url(../images/cryptoinfo/hint-plane.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 20000;
 }
 
 .CryptoInfo .hint-value-wrap {
@@ -70,6 +123,12 @@
   color: white;
   text-align: center;
   font-family: Consolas, Menlo, monospace;
+}
+
+@media (max-width: 479px) {
+  .div-block-34._4 {
+    margin-top: -360px;
+  }
 }
 
 .CryptoInfo #p1 {
@@ -123,4 +182,3 @@
   transform: rotateX(-6deg) rotateY(-21deg);
   text-shadow: 1px 1px 5px #69dbf2, -1px 1px 5px #69dbf2, 1px -1px 5px #69dbf2, -1px -1px 5px #69dbf2;
 }
-
