@@ -212,18 +212,45 @@ video {
 
 
 /* Trades counter */
+@media screen and (min-width: 992px){
+  .background-video-2 {
+    top: -890px;
+  }
+  .div-block-67 {
+    left: 605px;
+  }
+}
+@media screen and (max-width: 991px){
+  .div-block-67 {
+    left: 350px;
+  }
+}
 @media screen and (max-width: 767px){
   .background-video-2 {
     overflow: hidden;
+    top: -984px;
+  }
+  .div-block-67 {
+    left: 0px;
+  }
+  #trades-counter {
+    top: 304px;
+    left: 50px;
   }
 }
 @media screen and (max-width: 479px){
   .background-video-2 {
     display: block !important;
     top: -444px;
+    padding: 0;
   }
-  .div-block-67 {
-    max-width: 100%;
+  .div-block-67, .div-block-67 .image-16 {
+    width: 335px;
+    height: 200px;
+  }
+  #trades-counter {
+    top: 278px;
+    left: -7px;
   }
 }
 
