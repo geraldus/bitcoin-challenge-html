@@ -157,8 +157,10 @@ video {
 .div-block-51 .image-4 {
   margin-left: 15px;
 }
-.link_contacts {
-  margin-right: 15px;
+@media (min-width: 768px) {
+  .link_contacts {
+    margin-right: 15px;
+  }
 }
 
 
