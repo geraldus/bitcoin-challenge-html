@@ -153,14 +153,19 @@ video {
     background-position: 50% 441px;
     padding-top: 449px;
   }
+  .liders_sphere .w-col-tiny-4 {
+    max-width: 100px;
+  }
 }
 .div-block-51 .image-4 {
   margin-left: 15px;
 }
-@media (min-width: 768px) {
-  .link_contacts {
-    margin-right: 15px;
-  }
+#hall-of-fame .column-10.w-col.w-col-7 {
+  width: 100%;
+}
+#hall-of-fame .link_contacts {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -206,7 +211,6 @@ video {
   }
 
 }
-
 
 /* Trades counter */
 @media screen and (min-width: 992px){
