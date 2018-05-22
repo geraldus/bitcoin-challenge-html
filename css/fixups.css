@@ -209,7 +209,17 @@ video {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
   }
+}
 
+/* RoadMap */
+@media (max-width: 479px) {
+  .div-block-70 {
+    height: 420px;
+  }
+}
+
+#get-your-prize {
+  background: transparent;
 }
 
 /* Trades counter */
