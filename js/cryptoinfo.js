@@ -99,7 +99,6 @@ function PlanetaryIG (config) {
       var transformHint, transformWrap;
       transformHint = 'translate(' + planet.hint.x + 'px, ' + planet.hint.y + 'px)';
       transformWrap = 'translate(' + planet.x + 'px, ' + planet.y + 'px)';
-      //planet.hint.host.css('transform', transformHint);
       planet.wrap.css('transform', transformWrap);
       var scale = 'translate(-50%, -50%) scale(' + s + ')';
       planet.planetHost.css('transform', scale);

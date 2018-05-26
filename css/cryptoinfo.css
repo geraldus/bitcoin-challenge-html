@@ -176,9 +176,9 @@
 
 #trades-counter {
   font-size: 3.7rem;
-  top: 264px;
-  left: 20px;
+  top: 265px;
+  left: 50px;
   width: 260px;
-  transform: rotateX(-6deg) rotateY(-21deg);
+  transform: rotateX(-6deg) rotateY(-21deg) translateZ(35px);
   text-shadow: 1px 1px 5px #69dbf2, -1px 1px 5px #69dbf2, 1px -1px 5px #69dbf2, -1px -1px 5px #69dbf2;
 }

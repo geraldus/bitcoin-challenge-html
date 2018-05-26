@@ -7,21 +7,193 @@ video {
   max-width: 100%;
 }
 
+/* Homescreen and second section margin */
+.section-6 {
+  overflow: hidden;
+}
+
+.section-2 {
+  margin-top: 0px;
+  z-index: 10;
+}
+
+
 .div-block-62 {
-  height: 0px;
+  position: relative;
 }
-.homescreen-fix .div-block-62 {
-  position: fixed;
-  height: 1000px;
+
+#upper-floating-asteroids {
+  z-index: 999;
 }
+
+#leaders-asteroid {
+  background-image: url("../images/5ac480cd51116695814621d3_meteors_2.png"), url("../images/5ac486f7485eedd9d577ce66_Big_meteors_up.png"), url("../images/5ac486f7485eedd9d577ce66_Big_meteors_down.png");
+  background-repeat: no-repeat;
+  background-position: top center, top 50px center, bottom center;
+  background-size: 100% auto;
+  margin-top: -140px;
+  height: 2360px;
+  position: relative;
+  z-index: 1000;
+}
+
+.div-block-65 {
+  margin-top: 0;
+  top: 0;
+  background-image: none !important;
+}
+
+.liders_block {
+  height: 550px;
+}
+.liders_sphere {
+  padding-top: 0px;
+  margin-top: 0px;
+  top: 0;
+  height: 100%;
+  background-position: 50% 90px;
+}
+
+#members-table {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#hall-of-fame {
+  max-height: fit-content;
+}
+
+.section-3 {
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .div-block-62 {
+    height: 800px;
+  }
+  #upper-floating-asteroids {
+    margin-top: 0;
+  }
+  .meteors_big {
+    bottom: 265px;
+  }
+  #leaders-asteroid {
+    margin-top: -430px;
+    height: 2630px;
+  }
+  .liders_block {
+    padding-top: 220px;
+    height: 630px;
+  }
+  .liders_sphere {
+    background-position: 50% -80px;
+  }
+  #members-table {
+    margin-top: -270px;
+  }
+  .div-block-36.planet {
+    top: 360px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .div-block-62 {
+    height: 750px;
+  }
+  .section-2 {
+    margin-top: 0px;
+  }
+  #leaders-asteroid {
+    margin-top: -350px;
+    height: 2680px;
+  }
+  #upper-floating-asteroids {
+    margin-top: 0;
+    top: 0px;
+  }
+  #upper-floating-asteroids .div-block-76 {
+    top: 60px;
+  }
+  #upper-floating-asteroids .meteors_big {
+    bottom: -50px;
+  }
+  .liders_block {
+    padding-top: 210px;
+    height: 650px;
+  }
+  .liders_sphere {
+    background-position: 50% -50px;
+  }
+  #members-table {
+    margin-top: -240px;
+  }
+  #trades-counter {
+    top: 254px;
+    left: 50px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .div-block-62 {
+    height: 750px;
+  }
+  .section-2 {
+    margin-top: 430px;
+  }
+  .section-2 .div-block-25 {
+    overflow: hidden;
+  }
+  #leaders-asteroid {
+    margin-top: -200px;
+    height: 2610px;
+  }
+  #upper-floating-asteroids {
+    top: -45px;
+  }
+  .liders_sphere {
+    padding-top: 100px;
+  }
+  #bottom-floating-asteroids {
+    top: 2450px;
+  }
+  #members-table {
+    margin-top: 30px;
+  }
+  .div-block-34._4 {
+    margin-top: -220px;
+  }
+  .div-block-36.planet {
+    top: 600px;
+  }
+
+  .div-block-52 {
+    margin-top: -100px;
+  }
+}
+@media (max-width: 479px)
+{
+  .section-3 {
+    margin-top: -70px;
+  }
+
+  .div-block-62 {
+    height: 600px;
+  }
+
+  .div-block-65 {
+    height: 2230px;
+  }
+
+  .div-block-69 {
+    margin-top: 350px;
+  }
+}
+
 
 /* Descriptor */
 .div-block-17 {
-  top: 440px;
+  top: 470px;
 }
 @media  (max-width: 991px) {
   .div-block-17 {
-    top: 470px;
+    top: 500px;
   }
 }
 @media  (max-width: 767px) {
@@ -31,29 +203,20 @@ video {
 }
 @media  (max-width: 479px) {
   .div-block-17 {
-    top: 270px;
+    top: 280px;
   }
   .div-block-17 > .paragraph {
     font-size: 10px;
   }
 }
-@media (max-width: 479px){
-  .div-block-65 {
-    background-position: 50% 0px, 0px 148px, 100% 98px;
-  }
-}
-
-.section-2 {
-  margin-top: 1480px;
-}
 
 @media  (max-width: 767px) {
   .w-slider-arrow-left,
   .w-slider-arrow-right {
-    top: 2310px;
+    top: 1800px;
   }
   .w-slider-arrow-left {
-    right: 180px;
+    right: 120px;
   }
   .w-slider-arrow-right {
     left: 180px;
@@ -62,7 +225,7 @@ video {
 @media  (max-width: 479px) {
   .w-slider-arrow-left,
   .w-slider-arrow-right {
-    top: 2150px;
+    top: 2250px;
   }
 }
 
@@ -82,81 +245,41 @@ video {
 #lqbtn-1 {
   margin-top: -15px;
 }
+
 #lqbtn-2 {
   position: absolute;
   top: -45px;
   left: 50%;
   transform: translateX(-50%);
 }
+
 #lqbtn-3 {
   margin-top: 579px;
 }
+
 @media  (max-width: 991px) {
   #lqbtn-3 {
     margin-top: 700px;
   }
 }
 @media  (max-width: 767px) {
+  #lqbtn-2 {
+    top: -110px;
+  }
   #lqbtn-3 {
     margin-top: 630px;
   }
 }
 @media (max-width: 479px) {
+  .div-block-42 {
+    /* Liquid Button #2 parent */
+    margin-top: 100px;
+  }
   #lqbtn-3 {
     margin-top: 150px;
   }
 }
 
-/* Leaders section */
-
-.section-2 .div-block-19 {
-  top: 0px;
-}
-.section-2 .div-block-64 .div-block-65 {
-  top: -540px;
-}
-@media (max-width: 767px) {
-  .section-2 .div-block-64 .div-block-65 {
-    top: -100px;
-  }
-  .section-2 .div-block-25 {
-    overflow: hidden;
-  }
-}
-@media (max-width: 479px) {
-  .section-2 .div-block-64 .div-block-65 {
-    top: -730px;
-    z-index: 25000;
-  }
-}
-
-.liders_block {
-  height: 700px;
-}
-
-  .liders_sphere {
-    padding-top: 449px;
-    height: 800px;
-    background-position: 50% 361px;
-  }
-@media (max-width: 767px) {
-  .liders_sphere {
-    background-position: 50% 161px;
-    padding-top: 0;
-  }
-  .div-block-51 .image-4 {
-    display: none;
-  }
-}
-@media (max-width: 479px) {
-  .liders_sphere {
-    background-position: 50% 441px;
-    padding-top: 449px;
-  }
-  .liders_sphere .w-col-tiny-4 {
-    max-width: 100px;
-  }
-}
 .div-block-51 .image-4 {
   margin-left: 15px;
 }
@@ -169,12 +292,6 @@ video {
 }
 
 
-@media (max-width: 479px) {
-  .section-3 {
-    margin-top: -500px;
-    z-index: 14000;
-  }
-}
 .section-3 .div-block-34._4 .div-block-35 {
   top: 609px;
 }
@@ -194,7 +311,8 @@ video {
 
 /* Plantes */
 .section-3 .div-block-37 {
-  margin-top: 550px;
+  margin-top: 700px;
+  height: 800px;
 }
 @media (max-width: 479px) {
   .div-block-36.planet {
@@ -239,7 +357,7 @@ video {
 @media screen and (max-width: 767px){
   .background-video-2 {
     overflow: hidden;
-    top: -984px;
+    top: -1110px;
   }
   .div-block-67 {
     left: 0px;
@@ -252,7 +370,7 @@ video {
 @media screen and (max-width: 479px){
   .background-video-2 {
     display: block !important;
-    top: -444px;
+    top: -580px;
     padding: 0;
   }
   .div-block-67, .div-block-67 .image-16 {
