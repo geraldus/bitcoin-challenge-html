@@ -191,6 +191,9 @@ video {
   #get-your-prize div[class^="text-block"] {
     text-align: center;
   }
+  .text-block-14 {
+    text-align: center;
+  }
 }
 
 
