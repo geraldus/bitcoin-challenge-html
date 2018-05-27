@@ -373,8 +373,8 @@ video {
     left: 0px;
   }
   #trades-counter {
-    top: 304px;
-    left: 50px;
+    top: 298px;
+    left: 60px;
   }
 }
 @media screen and (max-width: 479px){
@@ -388,8 +388,8 @@ video {
     height: 200px;
   }
   #trades-counter {
-    top: 278px;
-    left: -7px;
+    top: 276px;
+    left: 13px;
   }
 }
 
