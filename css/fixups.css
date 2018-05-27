@@ -208,7 +208,7 @@ video {
 }
 @media  (max-width: 767px) {
   .div-block-17 {
-    top: 360px;
+    top: 380px;
   }
 }
 @media  (max-width: 479px) {
@@ -342,7 +342,7 @@ video {
 /* RoadMap */
 @media (max-width: 479px) {
   .div-block-70 {
-    height: 420px;
+    height: 460px;
   }
 }
 
