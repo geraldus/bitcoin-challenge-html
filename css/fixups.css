@@ -184,6 +184,13 @@ video {
   .div-block-69 {
     margin-top: 350px;
   }
+  #get-your-prize {
+    width: 240px;
+    padding: 0;
+  }
+  #get-your-prize div[class^="text-block"] {
+    text-align: center;
+  }
 }
 
 
