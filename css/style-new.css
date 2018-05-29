@@ -63,6 +63,30 @@ a.leader-profile {
   color: #3ab8ff;
 }
 
+#search-wrap {
+  height: 3rem;
+}
+
+#search-input {
+  height: 100%;
+  border-radius: 1.5rem;
+  background-color: black;
+  padding: 0 1rem;
+  border-width: 1px;
+  border-color: #474747;
+  border-style: solid;
+  color: white;
+}
+
+#search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -2.5rem;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 576px) {
   html {
     font-size: 0.7rem;
