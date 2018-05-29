@@ -1,0 +1,48 @@
+html {
+  font-size: 1rem;
+}
+
+.color-fff {
+  color: white;
+}
+
+.color-00ffeb, .color-cyan-highlight {
+  color: #00ffeb;
+}
+
+.liquid-button {
+  width: 350px;
+  display: block;
+}
+
+body {
+  background-color: black;
+  color: gainsboro;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#homescreen-logo {
+  background-image: url("../images/5ac48385b50fc92a57e6123d_space_main.png");
+  background-position: center 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+#homescreen-logo img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 0.7rem;
+  }
+  .liquid-button {
+    width: 250px;
+  }
+}
