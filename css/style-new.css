@@ -87,11 +87,99 @@ a.leader-profile {
   cursor: pointer;
 }
 
+#members-table {
+  width: 100%;
+}
+
+#members-table thead {
+  background-color: #010214;
+}
+#members-table tbody tr {
+  background-color: #0e0013;
+}
+
+#members-table thead tr th,
+#members-table tbody tr td {
+  padding: 1rem;
+  text-align: center;
+}
+
+#members-table thead tr th:first-child {
+  border-radius: 1rem 0 0 1rem;
+}
+#members-table thead tr th:last-child {
+  border-radius: 0 1rem 1rem 0;
+}
+
+#members-table tbody tr:first-child td:first-child {
+  border-radius: 1rem 0 0 0;
+}
+#members-table tbody tr:first-child td:last-child {
+  border-radius: 0 1rem 0 0;
+}
+#members-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 1rem;
+}
+#members-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 1rem 0;
+}
+
+#members-table tbody:before {
+  content: "-";
+  display: block;
+  line-height: 1em;
+  color: transparent;
+}
+
+#members-table .contacts-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+#members-table-pagination {
+  padding-top: 1rem;
+}
+
+#members-table div[class^="members-table-pagination-page"] {
+  margin: 0 0.5rem;
+}
+
+#members-table .members-table-pagination-page.active {
+  font-size: 120%;
+}
+
+#members-table .members-table-pagination-arrow {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#members-table-pagination-prev {
+  background-image: url("../images/5ac5f297ef857a66790530cf_Arrow_left.png");
+  margin-right: 3rem;
+}
+#members-table-pagination-next {
+  background-image: url("../images/5ac5f297ef857a66fd0530ce_Arrow_right.png");
+  margin-left: 3rem;
+}
+
 @media screen and (max-width: 576px) {
   html {
     font-size: 0.7rem;
   }
+
   .liquid-button {
     width: 250px;
+  }
+
+  #members-table thead tr th:nth-child(2) {
+    border-radius: 1rem 0 0 1rem;
+  }
+  #members-table tbody tr:first-child td:nth-child(2) {
+    border-radius: 1rem 0 0 0;
+  }
+  #members-table tbody tr:last-child td:nth-child(2) {
+    border-radius: 0 0 0 1rem;
   }
 }
