@@ -210,13 +210,13 @@ a.leader-profile {
 }
 
 #hall-of-fame-view .hall-of-fame-item.gold {
-  background-image: url("../images/5ac4bad2bbe2f5c3a9d2aa74_Flame_card_gold.png");
+  background-image: url("../images/Flame_card_gold.png");
 }
 #hall-of-fame-view .hall-of-fame-item.silver {
-  background-image: url("../images/5ac4bad26484cf35cb3e9466_Flame_card_silver.png");
+  background-image: url("../images/Flame_card_silver.png");
 }
 #hall-of-fame-view .hall-of-fame-item.bronze {
-  background-image: url("../images/5ac4bad2b50fc9eb22e65701_Flame_card_Bronze.png");
+  background-image: url("../images/Flame_card_Bronze.png");
 }
 
 #footer {
