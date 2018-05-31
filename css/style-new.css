@@ -165,6 +165,60 @@ a.leader-profile {
   margin-left: 3rem;
 }
 
+#stats-hall-of-fame {
+  margin-top: 1rem;
+  padding-top: 5rem;
+  background-image: url("../images/glow-hall-of-fame.png");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hall-of-fame-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stats-hall-of-fame .hall-of-fame-arrow {
+  width: 50px;
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hall-of-fame-prev {
+  background-image: url("../images/5ac5f297ef857a66790530cf_Arrow_left.png");
+}
+#hall-of-fame-next {
+  background-image: url("../images/5ac5f297ef857a66fd0530ce_Arrow_right.png");
+}
+
+#hall-of-fame-view {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#hall-of-fame-view .hall-of-fame-item {
+  width: 180px;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+#hall-of-fame-view .hall-of-fame-item.gold {
+  background-image: url("../images/5ac4bad2bbe2f5c3a9d2aa74_Flame_card_gold.png");
+}
+#hall-of-fame-view .hall-of-fame-item.silver {
+  background-image: url("../images/5ac4bad26484cf35cb3e9466_Flame_card_silver.png");
+}
+#hall-of-fame-view .hall-of-fame-item.bronze {
+  background-image: url("../images/5ac4bad2b50fc9eb22e65701_Flame_card_Bronze.png");
+}
+
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
   background-position: center bottom;
