@@ -167,6 +167,14 @@ a.leader-profile {
 
 #stats-hall-of-fame {
   margin-top: 1rem;
+  background-image: url("../images/5ac486f7485eedd9d577ce66_Big_meteors_down.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20rem;
+}
+
+#stats-hall-of-fame .hall-of-fame-header {
   padding-top: 5rem;
   background-image: url("../images/glow-hall-of-fame.png");
   background-position: center top;
@@ -219,6 +227,22 @@ a.leader-profile {
   background-image: url("../images/Flame_card_Bronze.png");
 }
 
+.hall-of-fame-item {
+  padding: 5.5rem 2.5rem 3.5rem;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hall-of-fame-item .name {
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
   background-position: center bottom;
@@ -244,5 +268,14 @@ a.leader-profile {
   }
   #members-table tbody tr:last-child td:nth-child(2) {
     border-radius: 0 0 0 1rem;
+  }
+
+  .hall-of-fame-item {
+    padding: 7.5rem 2.5rem 4.5rem;
+    font-size: 100%;
+  }
+
+  .hall-of-fame-item .name {
+    font-size: 105%;
   }
 }
