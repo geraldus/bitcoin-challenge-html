@@ -84,7 +84,9 @@ function PlanetaryIG (config) {
       var scaleValDiff = planet.targetScale - planet.startScale;
       planet.scale = planet.targetScale - (scaleValDiff * scaleTDiff / scaleTimeout || 0);
     }
-    setTimeout(self.update, self.updateDelay);
+    if (!window.DISABLE_ANIMATION) {
+      setTimeout(self.update, self.updateDelay);
+    }
   }
 
   this.render = function () {
@@ -113,7 +115,9 @@ function PlanetaryIG (config) {
       var hint = percentT + '%';
       planet.setHintValue(hint);
     }
-    requestAnimationFrame(self.render);
+    if (!window.DISABLE_ANIMATION) {
+      requestAnimationFrame(self.render);
+    }
   }
 
   this.__getPlanetCSSSize = function () {

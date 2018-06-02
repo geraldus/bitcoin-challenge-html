@@ -256,6 +256,20 @@ a.leader-profile {
   overflow: hidden;
 }
 
+#stats-currency-info {
+  background-image: url("../images/5ac4bad8bbe2f5fac4d2aa7b_Mars.png");
+  background-position: top center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  margin-top: -30rem;
+  padding-top: 30rem;
+}
+
+#planets {
+  height: 650px;
+}
+
 
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
