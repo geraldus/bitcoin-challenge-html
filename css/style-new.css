@@ -20,6 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#main-asteroid-wrap {
+  z-index: 10;
+}
+
 #homescreen-logo {
   background-image: url("../images/5ac48385b50fc92a57e6123d_space_main.png");
   background-position: center 5%;
@@ -242,6 +246,16 @@ a.leader-profile {
   margin-bottom: 0.3rem;
 }
 
+#stars-back-wrap {
+  background-image: url("../images/stars-back-new.png");
+  background-position: top center;
+  background-size: cover;
+  z-index: 9;
+  margin-top: -15rem;
+  padding-top: 15rem;
+  overflow: hidden;
+}
+
 
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
@@ -277,5 +291,10 @@ a.leader-profile {
 
   .hall-of-fame-item .name {
     font-size: 105%;
+  }
+
+  #stars-back-wrap {
+    margin-top: -25rem;
+    padding-top: 25rem;
   }
 }
