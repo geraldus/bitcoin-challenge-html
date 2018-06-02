@@ -270,6 +270,69 @@ a.leader-profile {
   height: 650px;
 }
 
+#roadmap-wrap {
+  margin-top: 8rem;
+}
+
+#roadmap-points {
+  background-image: url("../images/5ac4badc485eed7a39781f7d_Road_map.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 800px;
+}
+
+#roadmap-points .roadmap-point {
+  font-weight: 400;
+}
+
+#roadmap-points .roadmap-point a {
+  color: #ff337c;
+  text-decoration: underline;
+}
+
+#roadmap-points .roadmap-point {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+#roadmap-points .roadmap-point .roadmap-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #00cceb;
+  box-shadow: 0 0 47px 8px rgba(3, 203, 234, .6);
+  background-position: center;
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+}
+
+#roadmap-points .roadmap-point .description {
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  border: 1px solid rgba(3, 203, 234, .67);
+  background-color: rgba(0, 0, 0, .66);
+  box-shadow: 0 0 33px 1px rgba(3, 203, 234, .62);
+}
+
+#roadmap-point-step-4 .description {
+  width: 15rem;
+}
+
+#roadmap-icon-step-1 {
+  background-image: url("../images/5ac4bad4bbe2f58bfcd2aa77_link.png")
+}
+#roadmap-icon-step-2 {
+  background-image: url("../images/5ac4ca63b50fc9943ce66d27_astronaut-helmet.svg")
+}
+#roadmap-icon-step-3 {
+  background-image: url("../images/5ac4bad2bbe2f573dcd2aa73_downloading-down-arrow.png")
+}
+#roadmap-icon-step-4 {
+  background-image: url("../images/5ac4bad0bbe2f5ac7dd2aa71_coins.png")
+}
 
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
