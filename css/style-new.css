@@ -315,10 +315,22 @@ a.leader-profile {
   border: 1px solid rgba(3, 203, 234, .67);
   background-color: rgba(0, 0, 0, .66);
   box-shadow: 0 0 33px 1px rgba(3, 203, 234, .62);
+  min-width: fit-content;
+  max-width: 15rem;
 }
 
-#roadmap-point-step-4 .description {
-  width: 15rem;
+#roadmap-point-step-1 {
+}
+#roadmap-point-step-2 {
+  top: 25%;
+  left: 40%;
+}
+#roadmap-point-step-3 {
+  left: 20%;
+  top: 40%;
+}
+#roadmap-point-step-4 {
+  bottom: 0;
 }
 
 #roadmap-icon-step-1 {
