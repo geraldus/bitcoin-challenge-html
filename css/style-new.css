@@ -253,6 +253,7 @@ a.leader-profile {
   z-index: 9;
   margin-top: -15rem;
   padding-top: 15rem;
+  padding-bottom: 15rem;
   overflow: hidden;
 }
 
@@ -345,6 +346,57 @@ a.leader-profile {
 #roadmap-icon-step-4 {
   background-image: url("../images/5ac4bad0bbe2f5ac7dd2aa71_coins.png")
 }
+
+#counters {
+  margin-top: -15rem;
+  z-index: 10;
+}
+
+#stats-members-counter {
+  min-height: 450px;
+  width: 100%;
+  background-image: url("../images/moon_ground_2.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#members-counter-wrap {
+  width: 600px;
+  height: 380px;
+  background-image: url("../images/5ac4bad9511166dbf5465d91_neon_members.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 11;
+}
+
+#members-counter-spaceship {
+  width: 800px;
+  height: 334px;
+  background-image: url("../images/5ac4badfb50fc962e9e65715_spaceship.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+#stats-trades-counter {
+
+}
+
+#trades-counter-video-back-wrap video {
+  display: block;
+
+}
+
 
 #footer {
   background-image: url("../images/5aefe1ed70137421641c4aae_D093D180D183D0BFD0BFD0B02011.png");
