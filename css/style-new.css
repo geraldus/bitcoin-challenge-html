@@ -44,11 +44,11 @@ body {
   font-size: 150%;
 }
 
+#stats {
   background-image: url("../images/5ac486f7485eedd9d577ce66_Big_meteors_up.png");
   background-position: center top;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 300px;
   font-family: "Open Sans";
 }
 
