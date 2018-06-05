@@ -32,15 +32,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10%;
+  padding: 10% 10% 6% 10%;
 }
 
 #homescreen-logo img {
-  max-width: 80%;
+  max-width: 60%;
   max-height: 80%;
 }
 
-#stats-top {
+#homescreen-descriptor {
+  font-size: 150%;
+}
+
   background-image: url("../images/5ac486f7485eedd9d577ce66_Big_meteors_up.png");
   background-position: center top;
   background-size: cover;
@@ -404,6 +407,29 @@ a.leader-profile {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 250px;
+}
+
+/**
+ ***********************************************************************
+ *                            MEDIA QUERIES                            *
+ ***********************************************************************
+ **/
+
+
+@media screen and (max-width: 1200px) {
+  #homescreen-descriptor {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #homescreen-logo img {
+    max-width: 80%;
+  }
+
+  #homescreen-descriptor {
+    font-size: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
