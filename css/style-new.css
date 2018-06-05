@@ -53,7 +53,7 @@ body {
 }
 
 #stats-top-leaders {
-  margin-top: 12rem;
+  margin-top: 20rem;
 }
 
 #stats-top-leaders .leader-position,
@@ -63,7 +63,8 @@ body {
 }
 
 #stats-top-leaders .leader-icon {
-  max-width: 100%;
+  max-width: 200px;
+  margin-bottom: 30px;
 }
 
 a.leader-profile {
@@ -420,6 +421,16 @@ a.leader-profile {
   #homescreen-descriptor {
     font-size: 120%;
   }
+
+  #stats-top-leaders {
+    margin-top: 12rem;
+  }
+
+  #stats-top-leaders .leader-icon {
+    max-width: 180px;
+    margin-bottom: auto;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -430,6 +441,12 @@ a.leader-profile {
   #homescreen-descriptor {
     font-size: 100%;
   }
+
+  #stats-top-leaders .leader-icon {
+    max-width: 150px;
+  }
+}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -439,6 +456,10 @@ a.leader-profile {
 
   .liquid-button {
     width: 250px;
+  }
+
+  #stats-top-leaders .leader-icon {
+    max-width: 100%;
   }
 
   #members-table thead tr th:nth-child(2) {
