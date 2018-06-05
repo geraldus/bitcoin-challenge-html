@@ -217,12 +217,15 @@ a.leader-profile {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  max-height: 250px;
+  overflow: hidden;
 }
 
 #hall-of-fame-view .hall-of-fame-item {
   width: 180px;
   height: 250px;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 #hall-of-fame-view .hall-of-fame-item.gold {
@@ -450,6 +453,11 @@ a.leader-profile {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #hall-of-fame-view {
+    max-height: fit-content;
+    overflow: visible;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -475,7 +483,7 @@ a.leader-profile {
     border-radius: 0 0 0 1rem;
   }
 
-  .hall-of-fame-item {
+  #hall-of-fame-view .hall-of-fame-item {
     padding: 7.5rem 2.5rem 4.5rem;
     font-size: 100%;
   }
@@ -487,5 +495,14 @@ a.leader-profile {
   #stars-back-wrap {
     margin-top: -25rem;
     padding-top: 25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hall-of-fame-view .hall-of-fame-item {
+    width: 125px;
+    height: 180px;
+    font-size: 80%;
+    background-size: contain;
   }
 }
