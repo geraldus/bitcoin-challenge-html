@@ -4,6 +4,7 @@ DISABLE_ANIMATION = true;
 $(document).ready(function() {
   /** СЧЁТЧИКИ */
   // Создаём счётчики в нужных блоках
+  $('#stats-trades-counter video')[0].play();
 //   var host1 = $('#trades-counter');
 //   var host2 = $('#members-counter');
 //   var c1 = new Counter({ hostElement: host1 });
