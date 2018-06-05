@@ -96,7 +96,7 @@ a.leader-profile {
 }
 
 #members-table {
-  width: 100%;
+  width: 80%;
 }
 
 #members-table thead tr {
@@ -431,6 +431,9 @@ a.leader-profile {
     margin-bottom: auto;
   }
 
+  #members-table {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
