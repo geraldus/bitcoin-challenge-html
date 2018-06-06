@@ -266,8 +266,8 @@ a.leader-profile {
 
 #stats-currency-info {
   background-image: url("../images/5ac4bad8bbe2f5fac4d2aa7b_Mars.png");
-  background-position: top center;
-  background-size: 80%;
+  background-position: center -20vh;
+  background-size: 65%;
   background-repeat: no-repeat;
   min-height: 650px;
   margin-top: -30rem;
@@ -437,6 +437,11 @@ a.leader-profile {
   #members-table {
     width: 100%;
   }
+
+  #stats-currency-info {
+    background-position: center top;
+    background-size: 80%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -457,6 +462,10 @@ a.leader-profile {
   #hall-of-fame-view {
     max-height: fit-content;
     overflow: visible;
+  }
+
+  #stats-currency-info {
+    background-size: 90vw;
   }
 }
 
@@ -504,5 +513,9 @@ a.leader-profile {
     height: 180px;
     font-size: 80%;
     background-size: contain;
+  }
+
+  #stats-currency-info {
+    height: 800px;
   }
 }
