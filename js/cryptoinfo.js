@@ -118,6 +118,10 @@ function PlanetaryIG (config) {
     if (!window.DISABLE_ANIMATION) {
       requestAnimationFrame(self.render);
     }
+    window.__PlanetaryIG_redraw = function () {
+      self.update();
+      requestAnimationFrame(self.render);
+    }
   }
 
   this.__getPlanetCSSSize = function () {
