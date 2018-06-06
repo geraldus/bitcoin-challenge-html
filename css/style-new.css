@@ -283,7 +283,7 @@ a.leader-profile {
 }
 
 #roadmap-wrap {
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 #roadmap-points {
@@ -470,6 +470,36 @@ a.leader-profile {
 
   #stats-currency-info {
     background-size: 90vw;
+  }
+
+  #roadmap-points {
+    background-image: url("../images/5ad877f6a295e7d4c6eba148_20.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #roadmap-points .roadmap-point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 15rem;
+    margin: 1.5rem 0;
+  }
+
+  #roadmap-point-step-2 {
+    top: auto;
+    left: auto;
+  }
+  #roadmap-point-step-3 {
+    left: auto;
+    top: auto;
+  }
+  #roadmap-point-step-4 {
+    bottom: auto;
   }
 }
 
