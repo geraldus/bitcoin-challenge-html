@@ -364,8 +364,9 @@ a.leader-profile {
 }
 
 #stats-members-counter {
-  min-height: 450px;
+  min-height: 600px;
   width: 100%;
+  max-width: 1400px;
   background-image: url("../images/moon_ground_2.png");
   background-position: top center;
   background-size: cover;
@@ -381,9 +382,9 @@ a.leader-profile {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 11;
+  left: 70px;
+  top: 90px;
+  z-index: 10;
 }
 
 #members-counter-spaceship {
@@ -394,9 +395,22 @@ a.leader-profile {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  right: -60px;
+  top: 200px;
+  z-index: 11;
+}
+
+#members-counter-value {
+  position: absolute;
+  font-size: 1.7rem;
+  font-family: perfoovalnormal;
+  text-align: right;
+  top: 84px;
+  left: 148px;
+  color: white;
+  width: 103px;
+  transform: rotate(-8.8deg);
+  text-shadow: 1px 1px 3px red, -1px 1px 3px red, 1px -1px 3px red, -1px -1px 3px red;
 }
 
 #stats-trades-counter {
@@ -416,6 +430,7 @@ a.leader-profile {
   background-repeat: no-repeat;
   min-height: 250px;
 }
+
 
 /**
  ***********************************************************************
@@ -446,6 +461,17 @@ a.leader-profile {
     background-position: center top;
     background-size: 80%;
   }
+
+  #members-counter-wrap {
+    left: 0;
+    top: 30px;
+  }
+
+  #members-counter-spaceship {
+    max-width: 60%;
+    top: 110px;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -459,6 +485,14 @@ a.leader-profile {
 
   #stats-top-leaders .leader-icon {
     max-width: 150px;
+  }
+
+  #members-counter-wrap {
+    top: 0px;
+  }
+
+  #members-counter-spaceship {
+    top: 100px;
   }
 }
 
@@ -501,6 +535,10 @@ a.leader-profile {
   #roadmap-point-step-4 {
     bottom: auto;
   }
+
+  #members-counter-wrap {
+    left: -70px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -539,6 +577,10 @@ a.leader-profile {
     margin-top: -25rem;
     padding-top: 25rem;
   }
+
+  #members-counter-value {
+    font-size: 2.3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -551,5 +593,9 @@ a.leader-profile {
 
   #stats-currency-info {
     height: 800px;
+  }
+
+  #members-counter-wrap {
+    left: -100px;
   }
 }
