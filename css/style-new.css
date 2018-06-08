@@ -421,6 +421,41 @@ a.leader-profile {
 #trades-counter-video-back-wrap video {
   width: 90vw;
   display: block;
+  z-index: -1;
+}
+
+#trades-counter-counter-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#trades-counter-counter-back {
+  width: 400px;
+  height: 277px;
+  background-image: url("../images/5ad71df76638162ae971f176_Trades.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#trades-counter-value {
+  position: absolute;
+  font-size: 4.5rem;
+  font-family: perfoovalnormal;
+  text-align: right;
+  top: 105px;
+  left: 40px;
+  color: white;
+  width: 280px;
+  text-shadow: 1px 1px 5px #69dbf2, -1px 1px 5px #69dbf2, 1px -1px 5px #69dbf2, -1px -1px 5px #69dbf2;
 }
 
 
