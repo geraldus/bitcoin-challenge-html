@@ -367,6 +367,7 @@ a.leader-profile {
   min-height: 600px;
   width: 100%;
   max-width: 1400px;
+  margin-bottom: 12rem;
   background-image: url("../images/moon_ground_2.png");
   background-position: top center;
   background-size: cover;
@@ -462,6 +463,11 @@ a.leader-profile {
     background-size: 80%;
   }
 
+  #stats-members-counter {
+    min-height: 490px;
+    margin-bottom: 9rem;
+  }
+
   #members-counter-wrap {
     left: 0;
     top: 30px;
@@ -485,6 +491,11 @@ a.leader-profile {
 
   #stats-top-leaders .leader-icon {
     max-width: 150px;
+  }
+
+  #stats-members-counter {
+    min-height: 430px;
+    margin-bottom: 4rem;
   }
 
   #members-counter-wrap {
@@ -539,6 +550,11 @@ a.leader-profile {
   #members-counter-wrap {
     left: -70px;
   }
+
+  #members-counter-spaceship {
+    max-width: 80%;
+    right: -60px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -581,6 +597,11 @@ a.leader-profile {
   #members-counter-value {
     font-size: 2.3rem;
   }
+
+  #members-counter-spaceship {
+    max-width: 130%;
+    right: -50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -595,7 +616,16 @@ a.leader-profile {
     height: 800px;
   }
 
+  #stats-members-counter {
+    min-height: 380px;
+  }
+
   #members-counter-wrap {
     left: -100px;
+  }
+
+  #members-counter-spaceship {
+    max-width: 150%;
+    right: -60%;
   }
 }
