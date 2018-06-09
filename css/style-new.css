@@ -471,6 +471,9 @@ a.leader-profile {
   height: 500px;
   margin-top: 20rem;
 }
+
+#footer-button-wrap {
+  bottom: 0;
 }
 
 
@@ -596,6 +599,10 @@ a.leader-profile {
     max-width: 80%;
     right: -60px;
   }
+
+  #footer {
+    margin-top: 10rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -643,6 +650,7 @@ a.leader-profile {
     max-width: 130%;
     right: -50%;
   }
+
   #trades-counter-counter-wrap {
     justify-content: center;
     align-items: center;
@@ -657,6 +665,9 @@ a.leader-profile {
     width: 70%;
   }
 
+  #footer {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -688,5 +699,9 @@ a.leader-profile {
     font-size: 4.5rem;
     top: 115px;
     left: 30px;
+  }
+
+  #footer {
+    height: 280px;
   }
 }
