@@ -1,14 +1,13 @@
 var DISABLE_ANIMATION = false;
-DISABLE_ANIMATION = true;
+// DISABLE_ANIMATION = true;
 
 $(document).ready(function() {
   /** СЧЁТЧИКИ */
   // Создаём счётчики в нужных блоках
-  $('#stats-trades-counter video')[0].play();
-//   var host1 = $('#trades-counter');
-//   var host2 = $('#members-counter');
-//   var c1 = new Counter({ hostElement: host1 });
-//   var c2 = new Counter({ hostElement: host2 });
+  var host1 = $('#trades-counter-value');
+  var host2 = $('#members-counter-value');
+  var c1 = new Counter({ hostElement: host1 });
+  var c2 = new Counter({ hostElement: host2 });
   /* Далее идёт фукция, обновляющая данные счётчика.  В примере
      данные обновляются каждую секунду, получая произвольный прирост
      значения.
@@ -24,18 +23,18 @@ $(document).ready(function() {
        Запустит анимацию счётчика так, что через 10 секунд он примет
        значение 999 и остановится.
   */
-//   var updateInterval = 1000;
-//   var min = 100;
-//   var max = 1000;
-//   setInterval(function() {
+  var updateInterval = 1000;
+  var min = 100;
+  var max = 1000;
+  setInterval(function() {
     /* Здесь, соответсвенно нужнно загружать данные с сервера AJAX'ом
        вместо генерации случайного прироста.
     */
-//     var delta1 = Math.floor(Math.random() * (max - min)) + min;
-//     var delta2 = Math.floor(Math.random() * (max - min)) + min;
-//     c1.setTarget(c1.value + delta1, updateInterval);
-//     c2.setTarget(c2.value + delta2, updateInterval);
-//   }, updateInterval);
+    var delta1 = Math.floor(Math.random() * (max - min)) + min;
+    var delta2 = Math.floor(Math.random() * (max - min)) + min;
+    c1.setTarget(c1.value + delta1, updateInterval);
+    c2.setTarget(c2.value + delta2, updateInterval);
+  }, updateInterval);
 
   /** ИНФОГРАФИКА */
   var h = $('#planets');

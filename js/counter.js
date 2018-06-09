@@ -79,7 +79,9 @@ function Counter(config) {
 
   this.render = function() {
     self.hostElement.text(self.value);
-    self.requestId = requestAnimationFrame(self.render);
+    if (!window.DISABLE_ANIMATION) {
+      self.requestId = requestAnimationFrame(self.render);
+    }
   }
 
   this.init();
