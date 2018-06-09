@@ -431,8 +431,8 @@ a.leader-profile {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   z-index: 10;
 }
 
@@ -444,6 +444,9 @@ a.leader-profile {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 10;
+  margin-top: 8%;
+  margin-right: 8%;
 }
 
 #trades-counter-value {
@@ -465,6 +468,9 @@ a.leader-profile {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 250px;
+  height: 500px;
+  margin-top: 20rem;
+}
 }
 
 
@@ -637,6 +643,20 @@ a.leader-profile {
     max-width: 130%;
     right: -50%;
   }
+  #trades-counter-counter-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #trades-counter-counter-back {
+    margin: 0;
+  }
+
+  #trades-counter-value {
+    font-size: 6.2rem;
+    width: 70%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -662,5 +682,11 @@ a.leader-profile {
   #members-counter-spaceship {
     max-width: 150%;
     right: -60%;
+  }
+
+  #trades-counter-value {
+    font-size: 4.5rem;
+    top: 115px;
+    left: 30px;
   }
 }
