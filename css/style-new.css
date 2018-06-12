@@ -52,6 +52,24 @@ body {
   font-family: "Open Sans";
 }
 
+#stats-floating-asteroids-top-big {
+  height: 640px;
+  background-image: url("../images/5ac48464bbe2f5e6cdd2738b_meteors.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+#stats-floating-asteroids-top-small {
+  height: 740px;
+  background-image: url("../images/5ac4bad76484cfe2943e946a_meteors_2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
 #stats-top-leaders {
   margin-top: 20rem;
 }
