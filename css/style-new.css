@@ -391,6 +391,40 @@ a.leader-profile {
   background-image: url("../images/5ac4bad0bbe2f5ac7dd2aa71_coins.png")
 }
 
+.roadmap-floating-asteroid {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#roadmap-floating-asteroid-left {
+  width: 61px;
+  height: 62px;
+  position: absolute;
+  background-image: url("../images/5acc9fdda3d3a33adc94d2c2_D0A1D0BBD0BED0B920666.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  animation-duration: 10s;
+  animation-name: asteroid-rotation;
+  animation-direction: reverse;
+  left: 20vw;
+  top: -10rem;
+}
+
+#roadmap-floating-asteroid-right {
+  width: 131px;
+  height: 136px;
+  position: absolute;
+  background-image: url("../images/5acc9fdeab540befa0af9540_D0A1D0BBD0BED0B920714.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  animation-duration: 20s;
+  animation-name: asteroid-rotation;
+  right: 15vw;
+  top: 15rem;
+}
+
 #counters {
   margin-top: -15rem;
   z-index: 10;
@@ -741,4 +775,16 @@ a.leader-profile {
   #footer {
     height: 280px;
   }
+}
+
+/**
+ ***********************************************************************
+ *                              ANIMATIONS                             *
+ ***********************************************************************
+ **/
+
+
+@keyframes asteroid-rotation {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
 }
