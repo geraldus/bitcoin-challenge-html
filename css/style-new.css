@@ -83,6 +83,10 @@ body {
   background-repeat: no-repeat;
   position: fixed;
   top: 0;
+  display: none;
+}
+.floating-asteroids-top.parallax {
+  display: block;
 }
 
 #stats-top-leaders {
@@ -776,6 +780,7 @@ a.leader-profile {
     height: 280px;
   }
 }
+
 
 /**
  ***********************************************************************
