@@ -606,6 +606,22 @@ a.leader-profile {
     top: 110px;
     right: 0;
   }
+
+  #roadmap-floating-asteroid-left {
+    left: 10vw;
+    top: -10rem;
+  }
+
+  #roadmap-floating-asteroid-right {
+    right: 8vw;
+    top: 5rem;
+  }
+
+  #roadmap-floating-astronaut {
+    width: 498px;
+    height: 442px;
+    left: -200px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -632,6 +648,11 @@ a.leader-profile {
 
   #members-counter-spaceship {
     top: 100px;
+  }
+
+  #roadmap-floating-asteroid-right {
+    right: 8vw;
+    top: 0rem;
   }
 }
 
