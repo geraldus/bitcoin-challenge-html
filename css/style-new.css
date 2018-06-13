@@ -429,6 +429,19 @@ a.leader-profile {
   top: 15rem;
 }
 
+#roadmap-floating-astronaut {
+  width: 747px;
+  height: 663px;
+  position: absolute;
+  background-image: url("../images/5ac4bad0c3ce7d8d43d10c81_Astronom.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  animation-duration: 40s;
+  animation-name: astronaut-float;
+  left: -350px;
+}
+
 #counters {
   margin-top: -15rem;
   z-index: 10;
@@ -792,4 +805,12 @@ a.leader-profile {
 @keyframes asteroid-rotation {
   0% { transform: rotate(0) }
   100% { transform: rotate(360deg) }
+}
+
+@keyframes astronaut-float {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(7deg) }
+  50% { transform: rotate(0deg) }
+  75% { transform: rotate(-13deg) }
+  100% { transform: rotate(0deg) }
 }
