@@ -24,6 +24,14 @@ body {
   z-index: 10;
 }
 
+#homescreen.parallax {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 #homescreen-logo {
   background-image: url("../images/5ac48385b50fc92a57e6123d_space_main.png");
   background-position: center 5%;
@@ -51,23 +59,30 @@ body {
   background-repeat: no-repeat;
   font-family: "Open Sans";
 }
+#stats.parallax {
+  z-index: 3;
+}
 
 #stats-floating-asteroids-top-big {
-  height: 640px;
-  background-image: url("../images/5ac48464bbe2f5e6cdd2738b_meteors.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
+  background-image: url("../images/meteors_big_fixed.png");
+  z-index: 50;
+  background-color: #ff000070;
 }
 
 #stats-floating-asteroids-top-small {
-  height: 740px;
-  background-image: url("../images/5ac4bad76484cfe2943e946a_meteors_2.png");
+  background-image: url("../images/meteors_small_fixed.png");
+  background-color: #00800087;
+  z-index: 100;
+}
+
+.floating-asteroids-top {
+  height: 900px;
+  width: 100%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 
 #stats-top-leaders {
@@ -689,6 +704,10 @@ a.leader-profile {
 }
 
 @media screen and (max-width: 480px) {
+  .floating-asteroids-top {
+    height: 185px;
+  }
+
   #hall-of-fame-view .hall-of-fame-item {
     width: 125px;
     height: 180px;
