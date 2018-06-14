@@ -400,7 +400,7 @@ a.leader-profile {
   top: 40%;
 }
 #roadmap-point-step-4 {
-  bottom: 0;
+  bottom: 15%;
 }
 
 #roadmap-icon-step-1 {
@@ -415,6 +415,14 @@ a.leader-profile {
 #roadmap-icon-step-4 {
   background-image: url("../images/5ac4bad0bbe2f5ac7dd2aa71_coins.png")
 }
+#roadmap-icon-endpoint {
+  background-image: url("../images/coin.gif");
+}
+
+#roadmap-cta-button {
+  margin-top: 10rem;
+}
+
 
 .roadmap-floating-asteroid {
   animation-iteration-count: infinite;
@@ -717,6 +725,15 @@ a.leader-profile {
     bottom: auto;
   }
 
+  #roadmap-icon-endpoint {
+    width: 97px;
+    height: 105px;
+  }
+
+  #roadmap-endpoint .text {
+    position: initial;
+  }
+
   #members-counter-wrap {
     left: -70px;
   }
@@ -766,6 +783,10 @@ a.leader-profile {
   #stars-back-wrap {
     margin-top: -25rem;
     padding-top: 25rem;
+  }
+
+  #roadmap-endpoint {
+    bottom: -88px;
   }
 
   #members-counter-value {
