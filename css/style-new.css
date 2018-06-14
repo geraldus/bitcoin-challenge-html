@@ -368,8 +368,29 @@ a.leader-profile {
   max-width: 15rem;
 }
 
-#roadmap-point-step-1 {
+#roadmap-endpoint {
+  position: absolute;
+  bottom: -148px;
+  width: 100%;
 }
+
+#roadmap-icon-endpoint {
+  width: 137px;
+  height: 148px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#roadmap-endpoint .text {
+  position: absolute;
+  left: calc(50% + 118px);
+  bottom: 24px;
+  font-size: 190%;
+  text-align: left;
+}
+
 #roadmap-point-step-2 {
   top: 25%;
   left: 40%;
