@@ -468,6 +468,7 @@ a.leader-profile {
   background-position: center;
   animation-duration: 40s;
   animation-name: astronaut-float;
+  animation-iteration-count: infinite;
   left: -350px;
 }
 
