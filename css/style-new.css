@@ -438,7 +438,6 @@ a.leader-profile {
   margin-top: 8rem;
 }
 
-
 .roadmap-floating-asteroid {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -757,6 +756,10 @@ a.leader-profile {
     margin-top: 30px;
   }
 
+  #roadmap-cta-button {
+    margin-top: 12rem;
+  }
+
   #members-counter-wrap {
     left: -70px;
   }
@@ -814,6 +817,10 @@ a.leader-profile {
 
   #roadmap-icon-endpoint-glow {
     bottom: 36px;
+  }
+
+  #roadmap-cta-button {
+    margin-top: 8rem;
   }
 
   #members-counter-value {
