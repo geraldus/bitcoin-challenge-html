@@ -366,6 +366,7 @@ a.leader-profile {
   box-shadow: 0 0 33px 1px rgba(3, 203, 234, .62);
   min-width: fit-content;
   max-width: 15rem;
+  z-index: 10;
 }
 
 #roadmap-endpoint {
@@ -381,6 +382,20 @@ a.leader-profile {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+#roadmap-icon-endpoint-glow {
+  width: 1016px;
+  height: 1008px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/coin-glow-centered.png");
+  position: absolute;
+  bottom: -47px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 #roadmap-endpoint .text {
@@ -420,7 +435,7 @@ a.leader-profile {
 }
 
 #roadmap-cta-button {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 
@@ -726,13 +741,24 @@ a.leader-profile {
     bottom: auto;
   }
 
+  #roadmap-endpoint {
+    bottom: -193px;
+  }
+
   #roadmap-icon-endpoint {
     width: 97px;
     height: 105px;
   }
 
+  #roadmap-icon-endpoint-glow {
+    width: 735px;
+    height: 708px;
+    bottom: 50px;
+  }
+
   #roadmap-endpoint .text {
     position: initial;
+    margin-top: 30px;
   }
 
   #members-counter-wrap {
@@ -788,6 +814,10 @@ a.leader-profile {
 
   #roadmap-endpoint {
     bottom: -88px;
+  }
+
+  #roadmap-icon-endpoint-glow {
+    bottom: 36px;
   }
 
   #members-counter-value {
