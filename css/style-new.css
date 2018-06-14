@@ -543,10 +543,6 @@ a.leader-profile {
   text-shadow: 1px 1px 3px red, -1px 1px 3px red, 1px -1px 3px red, -1px -1px 3px red;
 }
 
-#stats-trades-counter {
-
-}
-
 #trades-counter-video-back-wrap video {
   width: 90vw;
   display: block;
