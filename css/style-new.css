@@ -66,12 +66,12 @@ body {
 #stats-floating-asteroids-top-big {
   background-image: url("../images/meteors_big_fixed.png");
   z-index: 50;
-  background-color: #ff000070;
+  /* background-color: #ff000070; */
 }
 
 #stats-floating-asteroids-top-small {
   background-image: url("../images/meteors_small_fixed.png");
-  background-color: #00800087;
+  /* background-color: #00800087; */
   z-index: 100;
 }
 

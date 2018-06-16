@@ -126,48 +126,49 @@ $(document).ready(function() {
   feedVals();
   setInterval(feedVals, timeout);
 
-  // const homescreen = $('#homescreen');
-  // const stats = $('#stats');
-  // const homescreenButton = $('#first-cta-button');
-  // const buttonHeight = homescreenButton.outerHeight();
-  // const asteroidsTopBig = $('#stats-floating-asteroids-top-big');
-  // const asteroidsTopSmall = $('#stats-floating-asteroids-top-small');
+  const homescreen = $('#homescreen');
+  const stats = $('#main-asteroid-wrap');
+  const homescreenButton = $('#first-cta-button');
+  const buttonHeight = homescreenButton.outerHeight();
+  const asteroidsTopBig = $('#stats-floating-asteroids-top-big');
+  const asteroidsTopSmall = $('#stats-floating-asteroids-top-small');
 
-  // homescreen.addClass('parallax');
-  // asteroidsTopBig.addClass('parallax');
-  // asteroidsTopSmall.addClass('parallax');
-  // const homescreenSpeed = homescreen.data('speed') || 1;
-  // var buttonOffset, asteroidsHeight, statsOffset;
+  homescreen.addClass('parallax');
+  asteroidsTopBig.addClass('parallax');
+  asteroidsTopSmall.addClass('parallax');
+  const homescreenSpeed = homescreen.data('speed') || 1;
+  var asteroidsHeight, statsOffset, homescreenHeight;
 
-  // const parallaxEffect = function () {
-  //   buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor').height();
-  //   asteroidsHeight = asteroidsTopBig.height();
-  //   let homescreenHeight = homescreen.height();
-  //   // stats div
-  //   statsOffset = buttonOffset * homescreenSpeed + asteroidsHeight;
-  //   // homescreen offset
-  //   let scrollHeight = $(document).scrollTop();
-  //   let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
-  //   // asteroids
-  //   let deltaScroll = scrollHeight / statsOffset;
-  //   let asteroidsSmallStart = statsOffset - 2 * asteroidsHeight;
-  //   let asteroidsBigStart   = statsOffset - 1.5 * asteroidsHeight;
-  //   let asteroidsSmallEnd = homescreenHeight - buttonHeight;
-  //   let asteroidsBigEnd   = asteroidsSmallEnd;
-  //   let asteroidsSmallDelta = asteroidsSmallStart - asteroidsSmallEnd;
-  //   let asteroidsBigDelta   = asteroidsBigStart   - asteroidsBigEnd;
-  //   let asteroidsSmallOffset = homescreenOffset + asteroidsBigStart - deltaScroll * asteroidsBigDelta;
-  //   let asteroidsBigOffset = homescreenOffset + asteroidsSmallStart - deltaScroll * asteroidsSmallDelta;
-  //   requestAnimationFrame(function () {
-  //     stats.css('margin-top', statsOffset);
-  //     homescreen.css('top', homescreenOffset);
-  //     asteroidsTopBig.css('top', asteroidsBigOffset);
-  //     asteroidsTopSmall.css('top', asteroidsSmallOffset);
-  //   });
-  // }
-  // parallaxEffect();
-  // setInterval(function () {
-  //   parallaxEffect();
-  // }, 17)
+  const parallaxEffect = function () {
+    asteroidsHeight = asteroidsTopBig.height();
+    homescreenHeight = homescreen.height();
+    let buttonOffset = homescreenHeight - $('#first-cta-button').height();
+    // stats div
+    statsOffset = buttonOffset * homescreenSpeed + buttonHeight + asteroidsHeight;
+    // homescreen offset
+    let scrollHeight = $(document).scrollTop();
+    let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
+    // asteroids
+    let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    let deltaScroll = scrollHeight / (buttonOffset * homescreenSpeed); // [0 .. 1]
+    let asteroidsSmallStart = 1.5* viewPortHeight;// - asteroidsHeight;
+    let asteroidsSmallEnd = buttonHeight; // - buttonHeight;
+    let asteroidsSmallDelta = asteroidsSmallStart - asteroidsSmallEnd;
+    let asteroidsSmallOffset = asteroidsSmallStart - deltaScroll * asteroidsSmallDelta;
+    let asteroidsBigStart   = viewPortHeight;
+    let asteroidsBigEnd   = buttonHeight;
+    let asteroidsBigDelta   = asteroidsBigStart - asteroidsBigEnd;
+    let asteroidsBigOffset = asteroidsBigStart - deltaScroll * asteroidsBigDelta;
+    requestAnimationFrame(function () {
+      stats.css('margin-top', statsOffset);
+      homescreen.css('top', homescreenOffset);
+      asteroidsTopBig.css('top', asteroidsBigOffset);
+      asteroidsTopSmall.css('top', asteroidsSmallOffset);
+    });
+  }
+  parallaxEffect();
+  setInterval(function () {
+    parallaxEffect();
+  }, 17)
 })
 
