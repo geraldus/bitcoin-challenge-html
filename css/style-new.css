@@ -947,6 +947,22 @@ a.leader-profile {
   min-width: 15px;
   min-height: 15px;
 }
+#blinking-star-001 {
+  top: 20%;
+  left: 15%;
+}
+#blinking-star-002 {
+  top: 25%;
+  left: 20%;
+}
+#blinking-star-003 {
+  top: 25%;
+  right: 15%;
+}
+#blinking-star-004 {
+  top: 40%;
+  right: 20%;
+}
 
 /**
  ***********************************************************************
@@ -967,6 +983,7 @@ a.leader-profile {
   75% { transform: rotate(-13deg) }
   100% { transform: rotate(0deg) }
 }
+
 @keyframes cycle-opacity {
   0% { opacity: 1;}
   50% { opacity: 0; }
