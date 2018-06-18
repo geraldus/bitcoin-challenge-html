@@ -141,27 +141,31 @@ $(document).ready(function() {
 
   const parallaxEffect = function () {
     asteroidsHeight = asteroidsTopBig.height();
-    homescreenHeight = homescreen.height();
-    let buttonOffset = homescreenHeight - $('#first-cta-button').height();
+    let buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor-wrap').height();
     // stats div
-    statsOffset = buttonOffset * homescreenSpeed + buttonHeight + asteroidsHeight;
+    statsOffset = buttonOffset * homescreenSpeed + buttonHeight + 0.75 * asteroidsHeight;
     // homescreen offset
     let scrollHeight = $(document).scrollTop();
     let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
     // asteroids
     let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     let deltaScroll = scrollHeight / (buttonOffset * homescreenSpeed); // [0 .. 1]
-    let asteroidsSmallStart = 1.5* viewPortHeight;// - asteroidsHeight;
-    let asteroidsSmallEnd = buttonHeight; // - buttonHeight;
+    let asteroidsSmallStart = viewPortHeight;
+    let asteroidsSmallEnd = 0;
     let asteroidsSmallDelta = asteroidsSmallStart - asteroidsSmallEnd;
     let asteroidsSmallOffset = asteroidsSmallStart - deltaScroll * asteroidsSmallDelta;
-    let asteroidsBigStart   = viewPortHeight;
+    let asteroidsBigStart   = viewPortHeight + 0.25 * asteroidsHeight;
     let asteroidsBigEnd   = buttonHeight;
     let asteroidsBigDelta   = asteroidsBigStart - asteroidsBigEnd;
     let asteroidsBigOffset = asteroidsBigStart - deltaScroll * asteroidsBigDelta;
+    // if (deltaScroll > 1) {
+    //   asteroidsSmallOffset = asteroidsBigOffset = homescreenOffset + buttonOffset;
+    // }
     requestAnimationFrame(function () {
       stats.css('margin-top', statsOffset);
-      homescreen.css('top', homescreenOffset);
+      homescreen
+        .css('top', homescreenOffset)
+        .css('padding-bottom', 2*asteroidsHeight);
       asteroidsTopBig.css('top', asteroidsBigOffset);
       asteroidsTopSmall.css('top', asteroidsSmallOffset);
     });

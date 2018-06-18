@@ -21,7 +21,7 @@ body {
 }
 
 #main-asteroid-wrap {
-  z-index: 10;
+  z-index: 150;
 }
 
 #homescreen.parallax {
@@ -64,19 +64,19 @@ body {
 }
 
 #stats-floating-asteroids-top-big {
-  background-image: url("../images/meteors_big_fixed.png");
+  background-image: url("../images/meteors_big_fixed2.png");
   z-index: 50;
   /* background-color: #ff000070; */
 }
 
 #stats-floating-asteroids-top-small {
-  background-image: url("../images/meteors_small_fixed.png");
+  background-image: url("../images/meteors_small_fixed2.png");
   /* background-color: #00800087; */
   z-index: 100;
 }
 
 .floating-asteroids-top {
-  height: 900px;
+  height: 815px;
   width: 100%;
   background-position: center;
   background-size: contain;
