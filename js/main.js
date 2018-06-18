@@ -1,8 +1,11 @@
+var DISABLE_ANIMATION = false;
+// DISABLE_ANIMATION = true;
+
 $(document).ready(function() {
   /** СЧЁТЧИКИ */
   // Создаём счётчики в нужных блоках
-  var host1 = $('#trades-counter');
-  var host2 = $('#members-counter');
+  var host1 = $('#trades-counter-value');
+  var host2 = $('#members-counter-value');
   var c1 = new Counter({ hostElement: host1 });
   var c2 = new Counter({ hostElement: host2 });
   /* Далее идёт фукция, обновляющая данные счётчика.  В примере
@@ -122,5 +125,6 @@ $(document).ready(function() {
   }
   feedVals();
   setInterval(feedVals, timeout);
+
 })
 
