@@ -928,6 +928,25 @@ a.leader-profile {
   }
 }
 
+.blinking-star {
+  animation-iteration-count: infinite;
+  animation-name: cycle-opacity;
+  width: 25px;
+  height:25px;
+  min-width: 25px;
+  min-height: 25px;
+  background-image: url("../images/5af02db78dc30a930ef0f346_D0A1D0BBD0BED0B9208.png");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  z-index: 100;
+}
+.blinking-star.small {
+  width: 15px;
+  height:15px;
+  min-width: 15px;
+  min-height: 15px;
+}
 
 /**
  ***********************************************************************
@@ -947,4 +966,21 @@ a.leader-profile {
   50% { transform: rotate(0deg) }
   75% { transform: rotate(-13deg) }
   100% { transform: rotate(0deg) }
+}
+@keyframes cycle-opacity {
+  0% { opacity: 1;}
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animation-duration-1 {
+  animation-duration: 5s;
+}
+.animation-duration-2 {
+  animation-duration: 10s;
+}
+.animation-duration-3 {
+  animation-duration: 15s;
+}
+.animation-duration-4 {
+  animation-duration: 20s;
 }
