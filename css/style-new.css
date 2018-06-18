@@ -947,6 +947,7 @@ a.leader-profile {
   min-width: 15px;
   min-height: 15px;
 }
+
 #blinking-star-001 {
   top: 20%;
   left: 15%;
@@ -963,7 +964,26 @@ a.leader-profile {
   top: 40%;
   right: 20%;
 }
-
+#blinking-star-021 {
+  top: 20%;
+  left: 25%;
+}
+#blinking-star-022 {
+  top: 25%;
+  right: 20%;
+}
+#blinking-star-023 {
+  top: 55%;
+  right: 25%;
+}
+#blinking-star-024 {
+  bottom: 20%;
+  left: 30%;
+}
+#blinking-star-031 {
+  bottom: 40%;
+  left: 35%;
+}
 /**
  ***********************************************************************
  *                              ANIMATIONS                             *
