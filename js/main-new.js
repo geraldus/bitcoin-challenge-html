@@ -126,53 +126,5 @@ $(document).ready(function() {
   feedVals();
   setInterval(feedVals, timeout);
 
-  const homescreen = $('#homescreen');
-  const stats = $('#main-asteroid-wrap');
-  const homescreenButton = $('#first-cta-button');
-  const buttonHeight = homescreenButton.outerHeight();
-  const asteroidsTopBig = $('#stats-floating-asteroids-top-big');
-  const asteroidsTopSmall = $('#stats-floating-asteroids-top-small');
-
-  homescreen.addClass('parallax');
-  asteroidsTopBig.addClass('parallax');
-  asteroidsTopSmall.addClass('parallax');
-  const homescreenSpeed = homescreen.data('speed') || 1;
-  var asteroidsHeight, statsOffset, homescreenHeight;
-
-  const parallaxEffect = function () {
-    asteroidsHeight = asteroidsTopBig.height();
-    let buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor-wrap').height();
-    // stats div
-    statsOffset = buttonOffset * homescreenSpeed + buttonHeight + 0.75 * asteroidsHeight;
-    // homescreen offset
-    let scrollHeight = $(document).scrollTop();
-    let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
-    // asteroids
-    let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let deltaScroll = scrollHeight / (buttonOffset * homescreenSpeed); // [0 .. 1]
-    let asteroidsSmallStart = viewPortHeight;
-    let asteroidsSmallEnd = 0;
-    let asteroidsSmallDelta = asteroidsSmallStart - asteroidsSmallEnd;
-    let asteroidsSmallOffset = asteroidsSmallStart - deltaScroll * asteroidsSmallDelta;
-    let asteroidsBigStart   = viewPortHeight + 0.25 * asteroidsHeight;
-    let asteroidsBigEnd   = buttonHeight;
-    let asteroidsBigDelta   = asteroidsBigStart - asteroidsBigEnd;
-    let asteroidsBigOffset = asteroidsBigStart - deltaScroll * asteroidsBigDelta;
-    // if (deltaScroll > 1) {
-    //   asteroidsSmallOffset = asteroidsBigOffset = homescreenOffset + buttonOffset;
-    // }
-    requestAnimationFrame(function () {
-      stats.css('margin-top', statsOffset);
-      homescreen
-        .css('top', homescreenOffset)
-        .css('padding-bottom', 2*asteroidsHeight);
-      asteroidsTopBig.css('top', asteroidsBigOffset);
-      asteroidsTopSmall.css('top', asteroidsSmallOffset);
-    });
-  }
-  parallaxEffect();
-  setInterval(function () {
-    parallaxEffect();
-  }, 17)
 })
 
