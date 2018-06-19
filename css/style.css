@@ -102,9 +102,24 @@ body {
   font-weight: 500;
 }
 
+#stats-top-leaders .col-4 {
+  display: flex;
+  justify-content: center;
+}
+
 #stats-top-leaders .leader-icon {
   max-width: 200px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#stats-top-leaders .row {
+  justify-content: center;
+}
+
+#stats-top-leaders .row p {
+  text-align: center;
 }
 
 a.leader-profile {
