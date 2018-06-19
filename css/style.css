@@ -129,6 +129,9 @@ a.leader-profile {
   border-style: solid;
   color: white;
 }
+#search-input:focus {
+  outline: none;
+}
 
 #search-icon {
   display: flex;
@@ -187,6 +190,9 @@ a.leader-profile {
 #members-table .contacts-icon {
   width: 1rem;
   height: 1rem;
+}
+#members-table a[data-target^="#"]:focus {
+  outline: none;
 }
 
 #members-table-pagination {
