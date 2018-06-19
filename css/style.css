@@ -400,8 +400,10 @@ a.leader-profile {
 
 #roadmap-endpoint {
   position: absolute;
-  bottom: -125px;
+  bottom: -220px;
   width: 100%;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 #roadmap-icon-endpoint {
@@ -411,6 +413,7 @@ a.leader-profile {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
 #roadmap-icon-endpoint-glow {
@@ -421,18 +424,14 @@ a.leader-profile {
   background-repeat: no-repeat;
   background-image: url("../images/coin-glow-centered.png");
   position: absolute;
-  bottom: -47px;
   left: 50%;
+  bottom: -46px;
   transform: translateX(-50%);
   z-index: 1;
 }
 
 #roadmap-endpoint .text {
-  position: absolute;
-  left: calc(50% + 118px);
-  bottom: 24px;
   font-size: 190%;
-  text-align: left;
 }
 
 #roadmap-point-step-2 {
@@ -465,7 +464,7 @@ a.leader-profile {
 }
 
 #roadmap-cta-button {
-  margin-top: 10rem;
+  margin-top: 13rem;
 }
 
 .roadmap-floating-asteroid {
@@ -814,7 +813,7 @@ a.leader-profile {
   #roadmap-icon-endpoint-glow {
     width: 735px;
     height: 708px;
-    bottom: 50px;
+    bottom: -25px;
   }
 
   #roadmap-endpoint .text {
