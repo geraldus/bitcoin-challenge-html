@@ -126,5 +126,35 @@ $(document).ready(function() {
   feedVals();
   setInterval(feedVals, timeout);
 
+  const homescreen = $('#homescreen');
+  const stats = $('#main-asteroid-wrap');
+  const homescreenButton = $('#first-cta-button');
+  const buttonHeight = homescreenButton.outerHeight();
+  // const asteroidsTopBig = $('#stats-floating-asteroids-top-big');
+  // const asteroidsTopSmall = $('#stats-floating-asteroids-top-small');
+
+  homescreen
+    .addClass('parallax')
+    .removeClass('position-relative');
+  const homescreenSpeed = homescreen.data('speed') || 1;
+  var statsOffset
+
+  const parallaxEffect = function () {
+    let buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor-wrap').height();
+    let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    statsOffset = (Math.max(buttonOffset, buttonOffset - 0.75 * viewPortHeight) * homescreenSpeed);
+    // homescreen offset
+    let scrollHeight = $(document).scrollTop();
+    let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
+    requestAnimationFrame(function () {
+      stats.css('margin-top', statsOffset);
+      homescreen
+        .css('top', homescreenOffset)
+    });
+  }
+  parallaxEffect();
+  setInterval(function () {
+    parallaxEffect();
+  }, 17)
 })
 
