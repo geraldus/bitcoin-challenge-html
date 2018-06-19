@@ -129,9 +129,6 @@ $(document).ready(function() {
   const homescreen = $('#homescreen');
   const stats = $('#main-asteroid-wrap');
   const homescreenButton = $('#first-cta-button');
-  const buttonHeight = homescreenButton.outerHeight();
-  // const asteroidsTopBig = $('#stats-floating-asteroids-top-big');
-  // const asteroidsTopSmall = $('#stats-floating-asteroids-top-small');
 
   homescreen
     .addClass('parallax')
