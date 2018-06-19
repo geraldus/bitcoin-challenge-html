@@ -436,15 +436,16 @@ a.leader-profile {
 }
 
 #roadmap-point-step-2 {
-  top: 25%;
-  left: 40%;
+  top: 23%;
+  left: 44%;
 }
 #roadmap-point-step-3 {
-  left: 20%;
-  top: 40%;
+  left: 50%;
+  top: 43%;
 }
 #roadmap-point-step-4 {
-  bottom: 15%;
+  bottom: 8%;
+  left: 56%;
 }
 
 #roadmap-icon-step-1 {
@@ -774,6 +775,8 @@ a.leader-profile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+
   }
 
   #roadmap-points .roadmap-point {
@@ -795,6 +798,7 @@ a.leader-profile {
     top: auto;
   }
   #roadmap-point-step-4 {
+    left: auto;
     bottom: auto;
   }
 
