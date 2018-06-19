@@ -273,7 +273,8 @@ $(document).ready(function () {
           canvas: c,
           text: 'Join',
           color2: '#0014ff',
-          textColor: '#ffffff'
+          textColor: '#ffffff',
+          fontWeight: 500
         });
       $(c).click(showPopup.bind(c));
     });
