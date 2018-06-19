@@ -850,6 +850,7 @@ a.leader-profile {
 
   #stats-top-leaders .leader-icon {
     max-width: 100%;
+    max-height: 80px;
   }
 
   #members-table thead tr th:nth-child(2) {
@@ -926,11 +927,16 @@ a.leader-profile {
     height: 185px;
   }
 
+  #stats-hall-of-fame .hall-of-fame-arrow {
+    width: 20px;
+  }
+
   #hall-of-fame-view .hall-of-fame-item {
     width: 125px;
     height: 180px;
     font-size: 80%;
     background-size: contain;
+    padding: 7.5rem 0.5rem 4.5rem;
   }
 
   #stats-currency-info {
