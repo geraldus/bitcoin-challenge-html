@@ -893,9 +893,18 @@ a.leader-profile {
     right: -50%;
   }
 
+  #stats-trades-counter {
+    margin-top: 100px;
+  }
+
+  #trades-counter-outer-wrap {
+    padding-top: 200px;
+  }
+
   #trades-counter-counter-wrap {
     justify-content: center;
     align-items: center;
+    top: -300px;
   }
 
   #trades-counter-counter-back {
