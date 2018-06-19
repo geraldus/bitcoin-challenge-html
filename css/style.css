@@ -558,6 +558,7 @@ a.leader-profile {
 
 #trades-counter-video-back-wrap video {
   width: 90vw;
+  max-width: 1280px;
   display: block;
   z-index: 0;
 }
