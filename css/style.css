@@ -356,7 +356,7 @@ a.leader-profile {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 800px;
+  min-height: 600px;
 }
 
 #roadmap-points .roadmap-point {
@@ -877,15 +877,11 @@ a.leader-profile {
   }
 
   #roadmap-endpoint {
-    bottom: -88px;
-  }
-
-  #roadmap-icon-endpoint-glow {
-    bottom: 36px;
+    bottom: -168px;
   }
 
   #roadmap-cta-button {
-    margin-top: 8rem;
+    margin-top: 15rem;
   }
 
   #members-counter-value {
