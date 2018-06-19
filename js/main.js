@@ -138,8 +138,9 @@ $(document).ready(function() {
 
   const parallaxEffect = function () {
     let buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor-wrap').height();
+    let buttonHeight = homescreenButton.outerHeight();
     let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    statsOffset = (Math.max(buttonOffset, buttonOffset - 0.75 * viewPortHeight) * homescreenSpeed);
+    statsOffset = (Math.max(buttonOffset + 0.5 * buttonHeight, buttonOffset - 0.75 * viewPortHeight) * homescreenSpeed);
     // homescreen offset
     let scrollHeight = $(document).scrollTop();
     let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
