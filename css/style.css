@@ -70,14 +70,14 @@ body {
   background-image: url("../images/meteors_big_fixed2.png");
   z-index: 50;
   transform: translateY(0%);
-  background-color: #ff000070;
+  /* background-color: #ff000070; */
 }
 
 #stats-floating-asteroids-top-small {
   background-image: url("../images/meteors_small_fixed2.png");
   z-index: 100;
   transform: translateY(20%);
-  background-color: #00800087;
+  /* background-color: #00800087; */
 }
 .parallax #stats-floating-asteroids-top-big {
   transform: translateY(-45%);
@@ -435,15 +435,15 @@ a.leader-profile {
 }
 
 #roadmap-icon-endpoint-glow {
-  width: 1016px;
-  height: 1008px;
+  width: 846px;
+  height: 878px;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../images/coin-glow-centered-2.png");
   position: absolute;
   left: 50%;
-  bottom: -96px;
+  bottom: -85px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -838,9 +838,9 @@ a.leader-profile {
   }
 
   #roadmap-icon-endpoint-glow {
-    width: 735px;
-    height: 708px;
-    bottom: -60px;
+    width: 575px;
+    height: 528px;
+    bottom: -23px;
   }
 
   #roadmap-endpoint .text {
