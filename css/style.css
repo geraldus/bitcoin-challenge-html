@@ -46,13 +46,16 @@ body {
 
 #main-asteroid-wrap {
   margin-top: 25vh;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
+  transition-duration: 2400ms;
+  transition-timing-function: cubic-bezier(0.620, 0.240, 0.050, 0.320);
   transition-property: margin-top;
+  background-image: url("../images/5ac481146484cffb683e66fc_Glow_planet.png");
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .parallax #main-asteroid-wrap {
   margin-top: -10vh;
-  transition-timing-function: ease-in;
 }
 
 #stats {
@@ -66,34 +69,36 @@ body {
 #stats-floating-asteroids-top-big {
   background-image: url("../images/meteors_big_fixed2.png");
   z-index: 50;
-  /* background-color: #ff000070; */
+  transform: translateY(0%);
+  background-color: #ff000070;
 }
 
 #stats-floating-asteroids-top-small {
   background-image: url("../images/meteors_small_fixed2.png");
-  /* background-color: #00800087; */
   z-index: 100;
   transform: translateY(20%);
+  background-color: #00800087;
 }
 .parallax #stats-floating-asteroids-top-big {
-  transform: translateY(-50%);
+  transform: translateY(-45%);
 }
 
 .parallax #stats-floating-asteroids-top-small {
-  transform: translateY(-100%);
+  transform: translateY(-60%);
 }
 
 .floating-asteroids-top {
-  height: 815px;
-  width: 100%;
+  height: 570px;
+  left: 0;
+  right: 0;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
   transition-property: transform;
-  transition-duration: 600ms;
-  transition-timing-function: ease-in;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.620, 0.240, 0.050, 0.320);
 }
 
 
@@ -681,6 +686,10 @@ a.leader-profile {
     font-size: 120%;
   }
 
+  .floating-asteroids-top {
+    height: 400px;
+  }
+
   #stats-top-leaders {
     margin-top: 12rem;
   }
@@ -745,6 +754,10 @@ a.leader-profile {
     font-size: 100%;
   }
 
+  .floating-asteroids-top {
+    height: 333px;
+  }
+
   #stats-top-leaders .leader-icon {
     max-width: 150px;
   }
@@ -769,6 +782,10 @@ a.leader-profile {
 }
 
 @media screen and (max-width: 767px) {
+  .floating-asteroids-top {
+    height: 201px;
+  }
+
   #hall-of-fame-view {
     max-height: 500px;
   }
@@ -858,6 +875,10 @@ a.leader-profile {
     width: 250px;
   }
 
+  .floating-asteroids-top {
+    height: 172px;
+  }
+
   #stats-top-leaders .leader-icon {
     max-width: 100%;
     max-height: 80px;
@@ -938,7 +959,7 @@ a.leader-profile {
 
 @media screen and (max-width: 480px) {
   .floating-asteroids-top {
-    height: 185px;
+    height: 110px;
   }
 
   #stats-hall-of-fame .hall-of-fame-arrow {
