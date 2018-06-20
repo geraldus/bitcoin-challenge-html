@@ -772,8 +772,7 @@ a.leader-profile {
 
 @media screen and (max-width: 767px) {
   #hall-of-fame-view {
-    max-height: fit-content;
-    overflow: visible;
+    max-height: 500px;
   }
 
   #stats-currency-info {
@@ -876,6 +875,10 @@ a.leader-profile {
     border-radius: 0 0 0 1rem;
   }
 
+  #hall-of-fame-view {
+    max-height: 520px;
+  }
+
   #hall-of-fame-view .hall-of-fame-item {
     padding: 7.5rem 2.5rem 4.5rem;
     font-size: 100%;
@@ -944,6 +947,9 @@ a.leader-profile {
     width: 20px;
   }
 
+  #hall-of-fame-view {
+    max-height: 360px;
+  }
   #hall-of-fame-view .hall-of-fame-item {
     width: 125px;
     height: 180px;
