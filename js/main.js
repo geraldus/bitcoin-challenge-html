@@ -130,29 +130,31 @@ $(document).ready(function() {
   const stats = $('#main-asteroid-wrap');
   const homescreenButton = $('#first-cta-button');
 
-  homescreen
-    .addClass('parallax')
-    .removeClass('position-relative');
-  const homescreenSpeed = homescreen.data('speed') || 1;
-  var statsOffset
+  let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  let parallaxTrigger = homescreenButton.offset().top - 0.5 * viewPortHeight;
+  let parallaxState = $(document).scrollTop() > parallaxTrigger;
 
-  const parallaxEffect = function () {
-    let buttonOffset = $('#homescreen-logo').outerHeight() + $('#homescreen-descriptor-wrap').height();
-    let buttonHeight = homescreenButton.outerHeight();
-    let viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    statsOffset = (Math.max(buttonOffset + 0.5 * buttonHeight, buttonOffset - 0.75 * viewPortHeight) * homescreenSpeed);
-    // homescreen offset
+  function parallaxDetection () {
+    viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    parallaxTrigger = homescreenButton.offset().top - 0.5 * viewPortHeight;
     let scrollHeight = $(document).scrollTop();
-    let homescreenOffset = -(scrollHeight / homescreenSpeed) || 0;
-    requestAnimationFrame(function () {
-      stats.css('margin-top', statsOffset);
-      homescreen
-        .css('top', homescreenOffset)
-    });
+    if (scrollHeight > parallaxTrigger && scrollHeight > 0) {
+      if (!parallaxState) {
+        parallaxState = true
+        $(document.body).addClass('parallax')
+      }
+    } else {
+      if (parallaxState) {
+        parallaxState = false;
+        $(document.body).removeClass('parallax')
+      }
+    }
   }
-  parallaxEffect();
-  setInterval(function () {
-    parallaxEffect();
-  }, 17)
+
+  parallaxDetection();
+
+  $(document).scroll(parallaxDetection)
+  $(document).resize(parallaxDetection)
 })
+
 

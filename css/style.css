@@ -24,17 +24,6 @@ body {
   z-index: 150;
 }
 
-#homescreen.parallax {
-  z-index: 2;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  /* background-image: url(../images/stars-back-new.png);
-  background-position: top center;
-  background-size: cover; */
-}
-
 #homescreen-logo {
   background-image: url("../images/5ac48385b50fc92a57e6123d_space_main.png");
   background-position: center 5%;
@@ -55,15 +44,23 @@ body {
   font-size: 150%;
 }
 
+#main-asteroid-wrap {
+  margin-top: 25vh;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-property: margin-top;
+}
+.parallax #main-asteroid-wrap {
+  margin-top: -10vh;
+  transition-timing-function: ease-in;
+}
+
 #stats {
   background-image: url("../images/5ac486f7485eedd9d577ce66_Big_meteors_up.png");
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Open Sans";
-}
-#stats.parallax {
-  z-index: 3;
 }
 
 #stats-floating-asteroids-top-big {
@@ -76,6 +73,14 @@ body {
   background-image: url("../images/meteors_small_fixed2.png");
   /* background-color: #00800087; */
   z-index: 100;
+  transform: translateY(20%);
+}
+.parallax #stats-floating-asteroids-top-big {
+  transform: translateY(-50%);
+}
+
+.parallax #stats-floating-asteroids-top-small {
+  transform: translateY(-100%);
 }
 
 .floating-asteroids-top {
@@ -84,11 +89,13 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   top: 0;
-  display: none;
+  transition-property: transform;
+  transition-duration: 600ms;
+  transition-timing-function: ease-in;
 }
-.floating-asteroids-top.parallax {
+.parallax .floating-asteroids-top {
   display: block;
 }
 
